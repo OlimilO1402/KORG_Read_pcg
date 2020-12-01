@@ -1,0 +1,54 @@
+#include "RessourceS.h"
+/////////////////////////////////////////////////////////////////////////////
+// Program Icons 
+// first  Icon for the program itself
+// second Icon for a registered filetype 
+//0                       ICON                    "Icons\\Common.ico"
+0                       ICON                    "Icons\\ProgIcon8bit.ico"
+1                       ICON                    "Icons\\FileIcon8bit.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// 24
+//Public Declare Sub InitCommonControls Lib "comctl32.dll" ()
+1                       RT_MANIFEST             "Manifest\\manifest.exe.manifest"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Some Useful Cursors
+//
+201                     CURSOR                  "Cursors\\H_POINT.cur"
+202                     CURSOR                  "Cursors\\HO_SPLIT.cur"
+203                     CURSOR                  "Cursors\\VE_SPLIT.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmaps for Toolbars
+// FileMenu
+101                     BITMAP                  "Buttons\\FileNew.bmp"
+102                     BITMAP                  "Buttons\\FileOpen.bmp"
+103                     BITMAP                  "Buttons\\FileSave.bmp"
+104                     BITMAP                  "Buttons\\FileSendEml.bmp"
+105                     BITMAP                  "Buttons\\FileImport.bmp"
+106                     BITMAP                  "Buttons\\FilePrintPrv.bmp"
+107                     BITMAP                  "Buttons\\FilePrinter.bmp"
+108                     BITMAP                  "Buttons\\FilePrint.bmp"
+// EditMenu
+201                     BITMAP                  "Buttons\\EditUndo.bmp"
+202                     BITMAP                  "Buttons\\EditRedo.bmp"
+203                     BITMAP                  "Buttons\\EditCut.bmp"
+204                     BITMAP                  "Buttons\\EditCopy.bmp"
+205                     BITMAP                  "Buttons\\EditPaste.bmp"
+206                     BITMAP                  "Buttons\\EditDelete.bmp"
+
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Tables
+//
+//die eigentlichen Stringtables mit include einfügen
+#include "StringTables\\english.rc"
+#include "StringTables\\deutsch.rc"
+#include "StringTables\\croatia.rc"
+#include "StringTables\\greece.rc"
