@@ -1,0 +1,6 @@
+# Exclude binary files
+*.exe
+*.dll
+
+# Exclude user-specific files
+*.vbw
