@@ -22,4 +22,4 @@ Now click "View->Show Samples" and you can step through the samples (.KSF) in
 the Listbox on the left (if there are any). On the right click the button 
 "Wave" in menu File click "Save All wav" (please be patient) now if you click 
 the "Play"-button you can audition the samples (if there are any).
-![KorgTrReader.png Image](KorgTrReader.png.png "KorgTrReader.png Image")
+![KorgTrReader.png Image](KorgTrReader.png "KorgTrReader.png Image")
