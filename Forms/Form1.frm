@@ -1,10 +1,10 @@
 VERSION 5.00
 Begin VB.Form Form1 
    AutoRedraw      =   -1  'True
-   Caption         =   "TR Reader"
+   Caption         =   "KORG TR Reader"
    ClientHeight    =   6015
-   ClientLeft      =   165
-   ClientTop       =   855
+   ClientLeft      =   225
+   ClientTop       =   870
    ClientWidth     =   7575
    Icon            =   "Form1.frx":0000
    LinkTopic       =   "Form1"
@@ -14,10 +14,11 @@ Begin VB.Form Form1
    StartUpPosition =   3  'Windows-Standard
    Begin VB.TextBox TxtFileName 
       Height          =   285
-      Left            =   120
+      Left            =   0
       OLEDragMode     =   1  'Automatisch
       OLEDropMode     =   1  'Manuell
       TabIndex        =   1
+      Text            =   "drag'drop files in the textbox"
       Top             =   120
       Width           =   6375
    End
@@ -75,7 +76,7 @@ End Sub
 
 Private Sub Form_Resize()
     Dim l As Single, T As Single, W As Single, H As Single
-    Dim brdr As Single: brdr = 8
+    Dim brdr As Single: brdr = 0 '8
     l = brdr:     T = TxtFileContent.Top
     W = Me.ScaleWidth - brdr - l
     H = Me.ScaleHeight - brdr - T
@@ -133,11 +134,14 @@ Private Sub TxtFileContent_OLEDragDrop(data As DataObject, Effect As Long, Butto
 End Sub
 
 Private Sub OpenKorgFile(aFnm As String)
+    Dim mp As MousePointerConstants:    mp = Me.MousePointer
+    Me.MousePointer = MousePointerConstants.vbArrowHourglass
     Set m_KORGDoc = New KorgDocument
     Call m_KORGDoc.Load(aFnm)
     TxtFileContent.Text = m_KORGDoc.ToString
     If m_KORGDoc.CountKorgSampleFiles > 0 Then
         mnuViewShowSamples.Enabled = True
     End If
+    Me.MousePointer = mp
 End Sub
 

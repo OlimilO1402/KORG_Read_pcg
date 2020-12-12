@@ -1,1 +1,0 @@
-"C:\Programme\Microsoft Visual Studio\VB98\Wizards\rc.exe" "D:\VB60To_dotNETClasses\CommonResScript\ResScript\RessourceS.rc" >>log.txt 
