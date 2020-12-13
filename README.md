@@ -1,5 +1,5 @@
 # KORG_Read_pcg
-## Reading the .pcg-fileformat for KORG synths in VB  
+## Reading the .pcg-fileformat for KORG synths    
 
 Reads files in .pcg-format; many Synths from KORGs e.g. the Triton line of 
 synths can store and load these files, for sharing sound data between 
