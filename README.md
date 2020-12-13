@@ -1,5 +1,5 @@
-# Reading_KORG_pcg
-## Reading the .pcg-fileformat for KORG synths in VB 
+# KORG_Read_pcg
+## Reading the .pcg-fileformat for KORG synths in VB  
 
 Reads files in .pcg-format; many Synths from KORGs e.g. the Triton line of 
 synths can store and load these files, for sharing sound data between 
@@ -22,4 +22,7 @@ Now click "View->Show Samples" and you can step through the samples (.KSF) in
 the Listbox on the left (if there are any). On the right click the button 
 "Wave" in menu File click "Save All wav" (please be patient) now if you click 
 the "Play"-button you can audition the samples (if there are any).
+Maybe also have a look at this KORG related project:
+https://github.com/OlimilO1402/KORG_Read_DS8syx
+
 ![KorgTrReader.png Image](Resources/KorgTrReader.png "KorgTrReader.png Image")

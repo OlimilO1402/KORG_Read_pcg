@@ -2,8 +2,8 @@ VERSION 5.00
 Begin VB.Form Form2 
    Caption         =   "KMP-Reader"
    ClientHeight    =   8295
-   ClientLeft      =   165
-   ClientTop       =   855
+   ClientLeft      =   225
+   ClientTop       =   870
    ClientWidth     =   11415
    Icon            =   "Form2.frx":0000
    LinkTopic       =   "Form2"
@@ -25,7 +25,7 @@ Begin VB.Form Form2
       MultiLine       =   -1  'True
       ScrollBars      =   3  'Beides
       TabIndex        =   5
-      Text            =   "Form2.frx":1782
+      Text            =   "Form2.frx":554A
       Top             =   480
       Width           =   7695
    End
