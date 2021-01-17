@@ -9,7 +9,7 @@ to the lack of sample ram memory and sampling feature.
 .pcg-files can be found e.g. in the download-section of korgforums.com
  http://www.korgforums.com/downloads.htm
 
-This VB-code i created in mid 2009 after i bought my very portable X50-Synth.
+I started this project in mid 2009 after i bought my very portable X50-Synth.
 It is just a tiny sample project. Maybe it can not read every pcg-file, but 
 it could serve as a starting point for your own implementations, or maybe 
 just in case you want to see whats inside this or that pcg-file.
