@@ -1,1 +1,0 @@
-.\rc.exe "MyRes.rc" >>log.txt 
