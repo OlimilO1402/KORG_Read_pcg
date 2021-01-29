@@ -1,0 +1,159 @@
+x7100 PCG	[Jun.27.'01]
+
+	The PCG file
+		PCG's file heeader
+		PCG chunk
+			Program chunk
+				Program bank chunk (Bank A)
+					:
+				Program bank chunk (Bank GM-Drum)
+			Combination chunk
+				Combination bank chunk (Bank A)
+					:
+				Combination bank chunk (Bank D)
+			Drumkit chunk
+				Drumkit bank chunk (Bank A/B)
+					:
+				Drumkit bank chunk (Bank GM)
+			Arpeggio chunk
+				Arpeggio bank chunk (Bank A/B)
+					:
+				Arpeggio bank chunk (Bank D)
+			Global chunk
+
+			CheckSum chunk(for self check)
+
+    PCG's header
+	 KORG ID			'KORG'	[4byte]
+	 Product ID			0x50	[1byte]
+	 File type			0x00	[1byte] *1
+	 Major version		0x00	[1byte]
+	 Minor version		0x01	[1byte]
+	 Padding			0x00	[8byte]
+
+
+    PCG chunk
+	 Chunk ID			'PCG1'	[4byte]
+	 size of Chunk				[4byte] (Programs/Combinations...Global)
+		
+    Program chunk
+	Chunk ID			'PRG1'	[4byte]
+	size of Chunk				[4byte]
+
+    Program bank chunk
+	Chunk ID			'PBK1'	[4byte] (Bank F = 'MBK1', for MOSS Program)
+	size of Chunk				[4byte]
+
+	num of program				[4byte]
+	size of a program			[4byte]
+	bank ID						[4byte] *2
+	program bank data			[variable]
+
+    Combination chunk
+	Chunk ID			'CMB1'	[4byte]
+	size of Chunk				[4byte]
+
+    Combination bank chunk
+	Chunk ID			'CBK1'	[4byte]
+	size of Chunk				[4byte]
+
+	num of combination			[4byte]
+	size of a combination		[4byte]
+	bank ID						[4byte] (Bank A:0/B:1/C:2...)
+	combination bank data		[variable]
+
+    Drumkit chunk
+	Chunk ID			'DKT1'	[4byte]
+	size of Chunk				[4byte]
+
+    Drumkit bank chunk
+	Chunk ID			'DBK1'	[4byte]
+	size of Chunk				[4byte]
+
+	num of drumkit				[4byte]
+	size of a drumkit			[4byte]
+	bank ID						[4byte] *3
+	drumkit bank data			[variable]
+
+    Arpeggio chunk
+	Chunk ID			'ARP1'	[4byte]
+	size of Chunk				[4byte]
+
+    Arpeggio bank chunk
+	Chunk ID			'ABK1'	[4byte]
+	size of Chunk				[4byte]
+
+	num of arpp					[4byte]
+	size of a arpp				[4byte]
+	bank ID						[4byte] *4
+	arpp bank data				[variable]
+
+    Global Chunk
+	Chunk ID			'GLB1'	[4byte]
+	size of Chunk				[4byte] sizeof (CGlobal)
+	global setting data			[sizeof(CGlobal)]
+
+    CheckSum chunk
+	Chunk ID			'CSM1'	[4byte]
+	size of Chunk	     0x0000002C	[4byte] 44byte
+	CheckSum ProgBankA		[2byte]
+	CheckSum ProgBankB		[2byte]
+	CheckSum ProgBankC		[2byte]
+	CheckSum ProgBankD		[2byte]
+	CheckSum ProgBankE		[2byte]
+	CheckSum ProgBankF		[2byte]
+	CheckSum ProgBankGM		[2byte]
+	CheckSum ProgBankGMV1	[2byte]
+	CheckSum ProgBankGMDrm	[2byte]
+	CheckSum CombiBankA		[2byte]
+	CheckSum CombiBankB		[2byte]
+	CheckSum CombiBankC		[2byte]
+	CheckSum CombiBankD		[2byte]
+	CheckSum Drum00-15		[2byte]
+	CheckSum Drum16-31		[2byte]
+	CheckSum Drum32-47		[2byte]
+	CheckSum Drum48-63		[2byte]
+	CheckSum Drum64-72		[2byte]
+	CheckSum Arpp00-63		[2byte]
+	CheckSum Arpp64-79		[2byte]
+	CheckSum Arpp80-95		[2byte]
+	CheckSum Global			[2byte]
+
+
+*1 (File type)
+	0x00 : PCG
+	0x01 : SNG
+	0x02 : EXL
+
+*2
+	0x00000000 : bank A kind
+	0x00000001 : bank B kind
+	0x00000002 : bank C kind
+	0x00000003 : bank D kind
+	0x00000004 : bank E kind
+	0x00008000 : bank F kind (Changed value 0x00000005 to 0x00008000 at Oct.28'98)
+	0x00010000 : bank GM kind
+	0x00010001 : bank GM Variation1 kind
+	0x00010002 : bank GM Drum kind
+
+*3
+	0x00000000 : bank A/B kind		(Kit# 00-15)
+	0x00000001 : bank C kind		(Kit# 16-31)
+	0x00000002 : bank D kind		(Kit# 32-47)
+	0x00000003 : bank User kind		(Kit# 48-63)
+	0x00010000 : bank GM kind		(Kit# 64-72)
+
+*4
+	0x00000000 : bank A/B kind		(Pat# 00-199)
+	0x00000001 : bank C kind		(Pat# 200-215)
+	0x00000002 : bank D kind		(Pat# 216-231)
+
+Japanese:
+
+¡‡…Ó)
+  1.  ‡øƒÇ€àTrinity€É‰ñ€«Awb_[€Ìf[^‹¨€Ä€ÍrbOGfBAB
+  2.  ¤›„mŒF`NID°y€ÄCheckSumChunkID€Ít@C°yC€ö€Í‹\‚€æ€¯€›B
+  3.  Program/Combination/Drumkit/Arpeggio/Global chunk€ÍAPCG chunkà€É€¦€¹€§€¹1†ª€Ì
+    €İ‰ë‡İ€ä€éB
+
+

@@ -1,0 +1,250 @@
+TRITON-Extreme PCG File Format
+
+	The PCG file
+		PCG's file heeader
+
+		PCG chunk
+		Divided File chunk
+		Item Name's Information chunk
+			Program chunk
+				Program bank chunk (Bank A)
+					:
+				Program bank chunk (Bank F)
+				Program bank chunk (Bank EXB A)
+					:
+				Program bank chunk (Bank EXbG)
+			Combination chunk
+				Combination bank chunk (Bank A)
+					:
+				Combination bank chunk (Bank E)
+				Combination bank chunk (Bank EXB A)
+					:
+				Combination bank chunk (Bank EXB G)
+			Drumkit chunk
+				Drumkit bank chunk (Bank A/B)
+				Drumkit bank chunk (Bank EXB A)
+					:
+				Drumkit bank chunk (Bank User)
+			Arpeggio chunk
+				Arpeggio bank chunk (Bank A/B)
+				Arpeggio bank chunk (Bank EXB A)
+					:
+				Arpeggio bank chunk (Bank User)
+			Global chunk
+
+			* 'INI1' chunk is for Disk mode.
+		      Please ignore this chunk.
+
+	PCG's header
+		KORG ID			'KORG'	[4byte]
+		Product ID		0x50	[1byte]
+		File type		0x00	[1byte]
+		Major version		0x00	[1byte]
+		Minor version		0x01	[1byte]
+		Product Sub ID		0x01    [1byte] *11 ###NEW
+		Padding			0x00    [7byte] 
+
+	PCG chunk
+		Chunk ID		'PCG1'	[4byte]
+		size of Chunk			[4byte] (Programs/Combinations...Global)
+
+	Program chunk
+		Chunk ID		'PRG1'	[4byte]
+		size of Chunk			[4byte]
+
+	Program bank chunk
+		Chunk ID		'PBK1'	[4byte] (Bank F = 'MBK1', for MOSS Program)
+		size of Chunk			[4byte]
+
+		num of program			[4byte]
+		size of a program		[4byte]
+		bank ID				[4byte] *1
+		program bank data		[variable]
+
+	Combination chunk
+		Chunk ID		'CMB1'	[4byte]
+		size of Chunk			[4byte]
+
+	Combination bank chunk
+		Chunk ID		'CBK1'	[4byte]
+		size of Chunk			[4byte]
+
+		num of combination		[4byte]
+		size of a combination		[4byte]
+		bank ID				[4byte] *2
+		combination bank data		[variable]
+
+	Drumkit chunk
+		Chunk ID		'DKT1'	[4byte]
+		size of Chunk			[4byte]
+
+	Drumkit bank chunk
+		Chunk ID		'DBK1'	[4byte]
+		size of Chunk			[4byte]
+
+		num of drumkit			[4byte]
+		size of a drumkit		[4byte]
+		bank ID				[4byte] *3
+		drumkit bank data		[variable]
+
+	Arpeggio chunk
+		Chunk ID		'ARP1'	[4byte]
+		size of Chunk			[4byte]
+
+	Arpeggio bank chunk
+		Chunk ID		'ABK1'	[4byte]
+		size of Chunk			[4byte]
+
+		num of arpp			[4byte]
+		size of a arpp			[4byte]
+		bank ID				[4byte] *4
+		arpp bank data			[variable]
+
+	Global chunk
+		Chunk ID		'GLB1'	[4byte]
+		size of Chunk			[4byte] sizeof (CGlobal)
+		global setting data		[sizeof(CGlobal)]
+
+	Divided File chunk
+		Chunk ID		'DIV1'	[4byte]
+		size of Chunk			[4byte]
+
+		status				[2byte] 0:Undivided/1:Divided
+		random ID			[2byte]
+
+		program info			[2byte] *5
+		num of progbank			[2byte] *5
+		reserved			[4byte]
+		combination info		[2byte] *6
+		num of combibank		[2byte] *6
+		reserved			[4byte]
+		drumkit info			[2byte] *7
+		num of dkitbank			[2byte] *7
+		reserved			[4byte]
+		arpp info			[2byte] *8
+		num of arpp			[2byte] *8
+		reserved			[4byte]
+		global info			[4byte] *9
+		reserved			[4byte]
+
+	Item Name's Information chunk
+		Chunk ID		'INI1'	[4byte]
+		size of Chunk			[4byte] *10 variable
+
+		num of items			[4byte] *10 variable
+		 1st item's chunk ID		[4byte] *10
+		 1st item's bank ID		[4byte] *10
+		 1st item's name		[20byte] *10
+		      :
+		 Nth item's chunk ID		[4byte] *10
+		 Nth item's bank ID		[4byte] *10
+		 Nth item's name		[20byte] *10
+		      
+
+
+*1
+	0x00000000 : bank A kind
+	0x00000001 : bank B kind
+	0x00000002 : bank C kind
+	0x00000003 : bank D kind
+	0x00000004 : bank E kind
+	0x00008000 : bank F kind
+	0x00020000 : bank H kind
+	       :	   :
+	0x00020006 : bank N kind
+
+*2
+	0x00000000 : bank A kind
+	       :	   :
+	0x00000004 : bank E kind
+	0x00020000 : bank H kind
+	       :	   :
+	0x00020006 : bank N kind
+
+*3
+	0x00000000 : bank A/B kind		(Kit# 000-015)
+	0x00020000 : bank H kind		(Kit# 016-031)
+	       :	  :
+	0x00020006 : bank N kind		(Kit# 112-127)
+	0x00020007 : bank User kind		(Kit# 128-143)
+
+*4
+	0x00000000 : bank A/B kind		(Pat# 000-199)
+	0x00020000 : bank H kind		(Pat# 200-215)
+	       :	  :
+	0x00020006 : bank N kind		(Pat# 296-311)
+	0x00020007 : bank User kind		(Pat# 312-506)
+
+*5(Saved program's information)
+	The item exist if bit is 1
+	Bit  0	bank A
+	     :	     :
+	     5	     F
+	     6	     H
+	     :	     :
+	    12	     N
+	   (13)	    (EXB H. for TRITON-Rack)
+	num of progbank = 14
+
+*6(Saved combination's information)
+	The item exist if bit is 1
+	Bit  0	bank A
+	     :	     :
+	     4	     E
+	     5	     H
+	     :	     :
+	     11	     N
+	    (12)    (EXB H. for TRITON-Rack)
+	num of combibank = 13
+
+*7(Saved drumkit's information)
+	The item exist if bit is 1
+   	 Bit 0    bank A/B
+	     1	       H
+   	     :	       :
+	     7	       N
+	     8	       User(/EXB H)
+	num of dkitbank = 9
+
+*8(Saved arpp's information)
+	The item exist if bit is 1
+	 Bit 0    bank A/B
+	     1	       H
+	     :	       :
+	     7	       N
+	     8	       User(/EXB H)
+	num of arppbank = 9
+
+*9(Saved global setting's information)
+	0	global setting doesn't exist.
+	1	global setting exist
+
+*10
+ ex.) PCG has Prog BankA/H,Global Setting 
+ (Size of chunk 'Item Name's Information chunk')
+	28[Item name's info] * 4[num of items] + 4[size of 'num of item'] = 116Byte
+ (Item name's informations)
+ ---
+	num of items		0x00000004
+
+	1st item's chunk ID	'PRG1'
+	1st item's bank ID	0x00000000
+	1st item's name		'Programs',0,0,0,0,0,0,0,0,0,0,0,0
+
+	2nd item's chunk ID	'PBK1'
+	2nd item's bank ID	0x00000000
+	2nd item's name		'Bank A',0,0,0,0,0,0,0,0,0,0,0,0,0,0
+
+	3rd item's chunk ID	'PBK1'
+	3rd item's bank ID	0x00020000
+	3rd item's name		'Bank H',0,0,0,0,0,0,0,0,0,0,0,0,0,0
+
+	4th item's chunk ID	'GLB1'
+	4th item's bank ID	0x00000000
+	4th item's name		'Global Setting',0,0,0,0,0,0
+ ---
+
+*11(Product Sub ID)
+	0x00		TRITON/TRITON-Rack/TRITON-Studio
+	0x01		TRITON-Extreme
+

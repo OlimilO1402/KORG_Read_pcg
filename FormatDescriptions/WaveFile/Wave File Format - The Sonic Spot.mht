@@ -1,0 +1,3319 @@
+From: <Mit Windows Internet Explorer 8 gespeichert>
+Subject: Wave File Format - The Sonic Spot
+Date: Tue, 21 Apr 2009 17:55:48 +0200
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----=_NextPart_000_0000_01C9C2AA.66E6A430"
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2900.5579
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0000_01C9C2AA.66E6A430
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.sonicspot.com/guide/wavefiles.html
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" =
+"http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML xmlns=3D"http://www.w3.org/1999/xhtml"><HEAD><TITLE>Wave File =
+Format - The Sonic Spot</TITLE>
+<META content=3D"text/html; charset=3Diso-8859-1" =
+http-equiv=3DContent-Type>
+<META name=3Ddescription content=3D"Wave File Format Specification.">
+<META name=3Dkeywords=20
+content=3D"wave file format, wav, wave, windows, file, format, =
+specification, programming, standard, chunk"><LINK=20
+title=3DMain rel=3Dstylesheet type=3Dtext/css=20
+href=3D"http://www.sonicspot.com/css/main/styles.css">
+<META name=3DGENERATOR content=3D"MSHTML 8.00.6001.18702"></HEAD>
+<BODY><!-- BEGIN: Header -->
+<TABLE class=3DHeader border=3D0 cellSpacing=3D0 cellPadding=3D0>
+  <TBODY>
+  <TR>
+    <TD class=3DNav>
+      <DIV class=3DTL>
+      <DIV class=3DTR>
+      <DIV class=3DBL>
+      <DIV class=3DBR>
+      <TABLE class=3DLayout border=3D0 cellSpacing=3D0 cellPadding=3D0>
+        <TBODY>
+        <TR>
+          <TD class=3DCell><A=20
+            =
+href=3D"http://www.sonicspot.com/software.html">Software</A></TD>
+          <TD class=3DCell><A=20
+            =
+href=3D"http://www.sonicspot.com/hardware/index.html">Hardware</A></TD>
+          <TD class=3DCell><A=20
+            =
+href=3D"http://www.sonicspot.com/guide/index.html">Guides</A></TD>
+          <TD class=3DCell><A=20
+            =
+href=3D"http://www.sonicspot.com/resources/index.html">Resources</A></TD>=
+
+          <TD class=3DCell><A=20
+          href=3D"http://www.sonicspot.com/forums/">Forums</A></TD>
+          <TD class=3DCell><A=20
+            =
+href=3D"http://www.sonicspot.com/search.html">Search</A></TD>
+          <TD class=3DCell><A=20
+            =
+href=3D"http://www.sonicspot.com/news/index.html">News</A></TD></TR></TBO=
+DY></TABLE></DIV></DIV></DIV></DIV></TD>
+    <TD class=3DBox vAlign=3Dtop rowSpan=3D2>
+      <DIV class=3DTL>
+      <DIV class=3DTR>
+      <DIV class=3DBL>
+      <DIV class=3DBR>
+      <SCRIPT language=3DJavaScript type=3Dtext/javascript=20
+      src=3D"http://www.sonicspot.com/phpadsnew/adx.js"></SCRIPT>
+
+      <SCRIPT language=3DJavaScript type=3Dtext/javascript>=0A=
+<!--=0A=
+   if (!document.phpAds_used) document.phpAds_used =3D ',';=0A=
+   phpAds_random =3D new String (Math.random()); phpAds_random =3D =
+phpAds_random.substring(2,11);=0A=
+   =0A=
+   document.write ("<" + "script language=3D'JavaScript' =
+type=3D'text/javascript' src=3D'");=0A=
+   document.write ("http://www.sonicspot.com/phpadsnew/adjs.php?n=3D" + =
+phpAds_random);=0A=
+   document.write =
+("&amp;what=3D&lt;button&gt;,_[wavefiles],_120x60,&lt;button&gt;,_(wavefi=
+les),_120x60,&lt;button&gt;,_(fileformatspecs),_120x60,&lt;button&gt;,_(f=
+ileformats),_120x60,&lt;button&gt;,_(guide),_120x60,&lt;button&gt;,_(all)=
+,_120x60|&lt;button&gt;,_120x60|120x60");=0A=
+   document.write ("&amp;exclude=3D" + document.phpAds_used);=0A=
+   if (document.referrer)=0A=
+      document.write ("&amp;referer=3D" + escape(document.referrer));=0A=
+   document.write ("'><" + "/script>");=0A=
+//-->=0A=
+</SCRIPT>
+      <NOSCRIPT><A=20
+      =
+href=3D"http://www.sonicspot.com/phpadsnew/adclick.php?n=3Da14ed9fe"=20
+      target=3D_blank><IMG border=3D0 alt=3D""=20
+      =
+src=3D"http://www.sonicspot.com/phpadsnew/adview.php?what=3D<button>,_[wa=
+vefiles],_120x60,<button>,_(wavefiles),_120x60,<button>,_(fileformatspecs=
+),_120x60,<button>,_(fileformats),_120x60,<button>,_(guide),_120x60,<butt=
+on>,_(all),_120x60|<button>,_120x60|120x60&amp;n=3Da14ed9fe"></A></NOSCRI=
+PT>=20
+      </DIV></DIV></DIV></DIV></TD></TR>
+  <TR>
+    <TD class=3DLogo>
+      <DIV class=3DTL>
+      <DIV class=3DTR>
+      <DIV class=3DBL>
+      <DIV class=3DBR><A =
+href=3D"http://www.sonicspot.com/index.html"><IMG border=3D0=20
+      alt=3D"The Sonic Spot" =
+src=3D"http://www.sonicspot.com/images/Logo.gif"=20
+      width=3D291 height=3D51></A> =
+</DIV></DIV></DIV></DIV></TD></TR></TBODY></TABLE><!-- END: Header =
+--><!-- BEGIN: Body -->
+<DIV class=3DBody>
+<DIV class=3DTL>
+<DIV class=3DTR>
+<DIV class=3DBL>
+<DIV class=3DBR>
+<DIV class=3DTopLeaderBoardAd>
+<SCRIPT language=3DJavaScript type=3Dtext/javascript=20
+src=3D"http://www.sonicspot.com/phpadsnew/adx.js"></SCRIPT>
+
+<SCRIPT language=3DJavaScript type=3Dtext/javascript>=0A=
+<!--=0A=
+   if (!document.phpAds_used) document.phpAds_used =3D ',';=0A=
+   phpAds_random =3D new String (Math.random()); phpAds_random =3D =
+phpAds_random.substring(2,11);=0A=
+   =0A=
+   document.write ("<" + "script language=3D'JavaScript' =
+type=3D'text/javascript' src=3D'");=0A=
+   document.write ("http://www.sonicspot.com/phpadsnew/adjs.php?n=3D" + =
+phpAds_random);=0A=
+   document.write =
+("&amp;what=3D&lt;top&gt;,_[wavefiles],_728x90,&lt;top&gt;,_(wavefiles),_=
+728x90,&lt;top&gt;,_(fileformatspecs),_728x90,&lt;top&gt;,_(fileformats),=
+_728x90,&lt;top&gt;,_(guide),_728x90,&lt;top&gt;,_(all),_728x90|&lt;top&g=
+t;,_728x90|728x90");=0A=
+   document.write ("&amp;exclude=3D" + document.phpAds_used);=0A=
+   if (document.referrer)=0A=
+      document.write ("&amp;referer=3D" + escape(document.referrer));=0A=
+   document.write ("'><" + "/script>");=0A=
+//-->=0A=
+</SCRIPT>
+<NOSCRIPT><A =
+href=3D"http://www.sonicspot.com/phpadsnew/adclick.php?n=3Da14ed9fe"=20
+target=3D_blank><IMG border=3D0 alt=3D""=20
+src=3D"http://www.sonicspot.com/phpadsnew/adview.php?what=3D<top>,_[wavef=
+iles],_728x90,<top>,_(wavefiles),_728x90,<top>,_(fileformatspecs),_728x90=
+,<top>,_(fileformats),_728x90,<top>,_(guide),_728x90,<top>,_(all),_728x90=
+|<top>,_728x90|728x90&amp;n=3Da14ed9fe"></A></NOSCRIPT>=20
+</DIV><!-- BEGIN: Breadcrumbs -->
+<TABLE id=3DLogoHolder class=3DLayoutTable border=3D0 cellSpacing=3D0 =
+cellPadding=3D0>
+  <TBODY>
+  <TR>
+    <TD>
+      <DIV class=3DBreadcrumbs>
+      <DIV class=3DBreadcrumbsTL>
+      <DIV class=3DBreadcrumbsTR>
+      <DIV class=3DBreadcrumbsBL>
+      <DIV class=3DBreadcrumbsBR><A=20
+      href=3D"http://www.sonicspot.com/index.html">Home</A> : <A=20
+      href=3D"http://www.sonicspot.com/guide/index.html">Guides</A> : <A =
+
+      href=3D"http://www.sonicspot.com/guide/fileformats.html">File =
+Formats</A> :=20
+      <A=20
+      =
+href=3D"http://www.sonicspot.com/guide/fileformatspecs.html">Specificatio=
+ns</A>=20
+      : Wave File Format =
+</DIV></DIV></DIV></DIV></DIV></TD></TR></TBODY></TABLE><!-- END: =
+Breadcrumbs --><!-- BEGIN: "Wave File Format" Block -->
+<DIV class=3DBlock>
+<DIV class=3DBlockTL>
+<DIV class=3DBlockTR>
+<H1>"Wave File Format"</H1>
+<DIV class=3DBlockBL>
+<DIV class=3DBlockBR>
+<DIV class=3DContent>
+<TABLE class=3DLayout border=3D0 cellSpacing=3D0 cellPadding=3D0>
+  <TBODY>
+  <TR>
+    <TD>
+      <H1>Table of Contents</H1>
+      <UL>
+        <LI><A=20
+        =
+href=3D"http://www.sonicspot.com/guide/wavefiles.html#overview">Overview<=
+/A>=20
+
+        <LI><A=20
+        =
+href=3D"http://www.sonicspot.com/guide/wavefiles.html#dataformats">Data=20
+        Formats</A>=20
+        <LI><A=20
+        =
+href=3D"http://www.sonicspot.com/guide/wavefiles.html#filestructure">File=
+=20
+        Structure</A>=20
+        <UL>
+          <LI><A=20
+          =
+href=3D"http://www.sonicspot.com/guide/wavefiles.html#wavefileheader">Wav=
+e=20
+          File Header</A>=20
+          <LI><A=20
+          =
+href=3D"http://www.sonicspot.com/guide/wavefiles.html#wavefilechunks">Wav=
+e=20
+          File Chunks</A>=20
+          <UL>
+            <LI><A=20
+            =
+href=3D"http://www.sonicspot.com/guide/wavefiles.html#fmt">Format=20
+            Chunk - "fmt "</A>=20
+            <LI><A=20
+            =
+href=3D"http://www.sonicspot.com/guide/wavefiles.html#data">Data Chunk=20
+            - "data"</A>=20
+            <LI><A=20
+            =
+href=3D"http://www.sonicspot.com/guide/wavefiles.html#fact">Fact Chunk=20
+            - "fact"</A>=20
+            <LI><A =
+href=3D"http://www.sonicspot.com/guide/wavefiles.html#cue">Cue=20
+            Chunk - "cue "</A>=20
+            <LI><A=20
+            =
+href=3D"http://www.sonicspot.com/guide/wavefiles.html#plst">Playlist=20
+            Chunk - "plst"</A>=20
+            <LI><A=20
+            =
+href=3D"http://www.sonicspot.com/guide/wavefiles.html#list">Associated=20
+            Data List Chunk - "list"</A>=20
+            <LI><A=20
+            =
+href=3D"http://www.sonicspot.com/guide/wavefiles.html#labl">Label=20
+            Chunk - "labl"</A>=20
+            <LI><A=20
+            =
+href=3D"http://www.sonicspot.com/guide/wavefiles.html#ltxt">Labeled=20
+            Text Chunk - "ltxt"</A>=20
+            <LI><A=20
+            =
+href=3D"http://www.sonicspot.com/guide/wavefiles.html#note">Note Chunk=20
+            - "note"</A>=20
+            <LI><A=20
+            =
+href=3D"http://www.sonicspot.com/guide/wavefiles.html#smpl">Sample=20
+            Chunk - "smpl"</A>=20
+            <LI><A=20
+            =
+href=3D"http://www.sonicspot.com/guide/wavefiles.html#inst">Instrument=20
+            Chunk - "inst"</A> </LI></UL></LI></UL>
+        <LI><A=20
+        =
+href=3D"http://www.sonicspot.com/guide/wavefiles.html#formatvariations">F=
+ormat=20
+        Variations</A> </LI></UL><A name=3Doverview></A>
+      <H1>Overview</H1>The Wave file format is Windows' native file =
+format for=20
+      storing digital audio data. It has become one of the most widely =
+supported=20
+      digital audio file formats on the PC due to the popularity of =
+Windows and=20
+      the huge number of programs written for the platform. Almost every =
+modern=20
+      program that can open and/or save digital audio supports this file =
+format,=20
+      making it both extremely useful and a virtual requirement for =
+software=20
+      developers to understand. The following specification gives a =
+detailed=20
+      description of the structure and inner workings of this format. <A =
+
+      name=3Ddataformats></A>
+      <H1>Data Formats</H1>Since the Wave file format is native to =
+Windows and=20
+      therefor Intel processors, all data values are stored in <A=20
+      =
+href=3D"http://www.sonicspot.com/guide/pglossary.html#littleendian">Littl=
+e-Endian</A>=20
+      (least significant byte first) order.=20
+      <P><I>Strings</I><BR>Wave files may contain strings of text for =
+specifying=20
+      cue point labels, notes, etc. Strings are stored in a format where =
+the=20
+      first byte specifies the number of following ASCII text bytes in =
+the=20
+      string. The following bytes are of course the ASCII character =
+bytes that=20
+      make up the text string. Pascal programmers will notice that this =
+is the=20
+      same format used for Pascal strings.=20
+      <P>
+      <CENTER>
+      <TABLE cellSpacing=3D1 cellPadding=3D4 bgColor=3D#000000>
+        <TBODY>
+        <TR bgColor=3D#c0c0c0>
+          <TD>7</TD>
+          <TD>'e'</TD>
+          <TD>'x'</TD>
+          <TD>'a'</TD>
+          <TD>'m'</TD>
+          <TD>'p'</TD>
+          <TD>'l'</TD>
+          <TD>'e'</TD></TR></TBODY></TABLE><SMALL>Wave String Format =
+Example</SMALL>=20
+      </CENTER><A name=3Dfilestructure></A>
+      <H1>File Structure</H1>
+      <TABLE cellSpacing=3D1 cellPadding=3D12 bgColor=3D#000000 =
+align=3Dright>
+        <TBODY>
+        <TR>
+          <TD bgColor=3D#dddddd>
+            <CENTER><B>Basic Wave File Layout</B></CENTER>
+            <P>
+            <CENTER>
+            <TABLE border=3D0 cellSpacing=3D1 cellPadding=3D4 =
+bgColor=3D#000000>
+              <TBODY>
+              <TR>
+                <TD bgColor=3D#bbbbbb>Chunk ID "RIFF"<BR>Chunk Data=20
+              Size<BR></TD></TR>
+              <TR>
+                <TD bgColor=3D#cccccc>
+                  <TABLE>
+                    <TBODY>
+                    <TR>
+                      <TD>RIFF Type ID "WAVE"<BR></TD></TR>
+                    <TR>
+                      <TD>
+                        <TABLE border=3D0 cellSpacing=3D1 =
+cellPadding=3D4 width=3D"100%"=20
+                        bgColor=3D#000000>
+                          <TBODY>
+                          <TR bgColor=3D#b0b0b0>
+                            <TD>Chunk ID "fmt "<BR>Chunk Data =
+Size<BR></TD></TR>
+                          <TR>
+                            <TD bgColor=3D#cccccc>Sample Format=20
+                          Info<BR></TD></TR></TBODY></TABLE></TD></TR>
+                    <TR>
+                      <TD>
+                        <TABLE border=3D0 cellSpacing=3D1 =
+cellPadding=3D4 width=3D"100%"=20
+                        bgColor=3D#000000>
+                          <TBODY>
+                          <TR bgColor=3D#b0b0b0>
+                            <TD>Chunk ID "data"<BR>Chunk Data =
+Size<BR></TD></TR>
+                          <TR>
+                            <TD bgColor=3D#cccccc>Digital Audio=20
+                          =
+Samples<BR></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR>=
+</TBODY></TABLE>
+            <P></P>
+            <TABLE border=3D0 cellSpacing=3D0 cellPadding=3D2>
+              <TBODY>
+              <TR>
+                <TD>
+                  <TABLE border=3D0 cellSpacing=3D1 cellPadding=3D4 =
+bgColor=3D#000000>
+                    <TBODY>
+                    <TR>
+                      <TD =
+bgColor=3D#bbbbbb>&nbsp;</TD></TR></TBODY></TABLE></TD>
+                <TD>Chunk Header<BR></TD></TR>
+              <TR>
+                <TD>
+                  <TABLE border=3D0 cellSpacing=3D1 cellPadding=3D4 =
+bgColor=3D#000000>
+                    <TBODY>
+                    <TR>
+                      <TD =
+bgColor=3D#cccccc>&nbsp;</TD></TR></TBODY></TABLE></TD>
+                <TD>Chunk Data =
+Bytes<BR></TD></TR></TBODY></TABLE></CENTER>
+            <P></P></TD></TR></TBODY></TABLE>Wave files use the standard =
+<A=20
+      =
+href=3D"http://www.sonicspot.com/guide/pglossary.html#riff">RIFF</A>=20
+      structure which groups the files contents (sample format, digital =
+audio=20
+      samples, etc.) into separate chunks, each containing it's own =
+header and=20
+      data bytes. The chunk header specifies the type and size of the =
+chunk data=20
+      bytes. This organization method allows programs that do not use or =
+
+      recognize particular types of chunks to easily skip over them and =
+continue=20
+      processing following known chunks. Certain types of chunks may =
+contain=20
+      sub-chunks. For example, in the diagram to the right, you can see =
+that the=20
+      "fmt " and "data" chunks are actually sub-chunks of the "RIFF" =
+chunk.=20
+      <P>One tricky thing about RIFF file chunks is that they must be =
+word=20
+      aligned. This means that their total size must be a multiple of 2 =
+bytes=20
+      (ie. 2, 4, 6, 8, and so on). If a chunk contains an odd number of =
+data=20
+      bytes, causing it not to be word aligned, an extra padding byte =
+with a=20
+      value of zero must follow the last data byte. This extra padding =
+byte is=20
+      not counted in the chunk size, therefor a program must always word =
+align a=20
+      chunk headers size value in order to calculate the offset of the =
+following=20
+      chunk. <A name=3Dwavefileheader></A>
+      <H1>Wave File Header - RIFF Type Chunk</H1>Wave file headers =
+follow the=20
+      standard RIFF file format structure. The first 8 bytes in the file =
+is a=20
+      standard RIFF chunk header which has a chunk ID of "RIFF" and a =
+chunk size=20
+      equal to the file size minus the 8 bytes used by the header. The =
+first 4=20
+      data bytes in the "RIFF" chunk determines the type of resource =
+found in=20
+      the RIFF chunk. Wave files always use "WAVE". After the RIFF type =
+comes=20
+      all of the Wave file chunks that define the audio waveform.=20
+      <P>
+      <CENTER>
+      <TABLE cellSpacing=3D1 cellPadding=3D4>
+        <TBODY>
+        <TR bgColor=3D#999999>
+          <TD><B>Offset</B></TD>
+          <TD><B>Size</B></TD>
+          <TD><B>Description</B></TD>
+          <TD><B>Value</B></TD></TR>
+        <TR bgColor=3D#b0b0b0>
+          <TD>0x00</TD>
+          <TD>4</TD>
+          <TD>Chunk ID</TD>
+          <TD>"RIFF" (0x52494646)</TD></TR>
+        <TR bgColor=3D#b0b0b0>
+          <TD>0x04</TD>
+          <TD>4</TD>
+          <TD>Chunk Data Size</TD>
+          <TD>(file size) - 8</TD></TR>
+        <TR bgColor=3D#c0c0c0>
+          <TD>0x08</TD>
+          <TD>4</TD>
+          <TD>RIFF Type</TD>
+          <TD>"WAVE" (0x57415645)</TD></TR>
+        <TR bgColor=3D#c0c0c0>
+          <TD>0x10</TD>
+          <TD colSpan=3D3>
+            <CENTER>Wave chunks</CENTER></TD></TR>
+        <TR>
+          <TD colSpan=3D4>
+            <CENTER><SMALL>RIFF Type Chunk=20
+      Values</SMALL></CENTER></TD></TR></TBODY></TABLE></CENTER><A=20
+      name=3Dwavefilechunks></A>
+      <H1>Wave File Chunks</H1>There are quite a few types of chunks =
+defined for=20
+      Wave files. Many Wave files contain only two of them, specifically =
+the=20
+      Format Chunk and the Data Chunk. These are the two chunks needed =
+to=20
+      describe the format of the digital audio samples and the samples=20
+      themselves. Although it is not required by the official Wave file=20
+      specification, it is good practice to place the Format Chunk =
+before the=20
+      Data Chunk. Many programs expect the chunks to be stored in this =
+order and=20
+      it is more sensible when streaming digital audio from a slow, =
+linear=20
+      source such as the Internet. If the format were to come after the =
+data,=20
+      all of the data and then the format would have to be streamed =
+before=20
+      playback could start correctly.=20
+      <P>All RIFF Chunks and therefore Wave Chunks are stored in the =
+following=20
+      format. Notice that even the above mentioned RIFF Type Chunk =
+conforms to=20
+      this format.=20
+      <P>
+      <CENTER>
+      <TABLE cellSpacing=3D1 cellPadding=3D4>
+        <TBODY>
+        <TR bgColor=3D#999999>
+          <TD><B>Offset</B></TD>
+          <TD><B>Size</B></TD>
+          <TD><B>Description</B></TD></TR>
+        <TR bgColor=3D#b0b0b0>
+          <TD>0x00</TD>
+          <TD>4</TD>
+          <TD>Chunk ID</TD></TR>
+        <TR bgColor=3D#b0b0b0>
+          <TD>0x04</TD>
+          <TD>4</TD>
+          <TD>Chunk Data Size</TD></TR>
+        <TR bgColor=3D#c0c0c0>
+          <TD>0x08</TD>
+          <TD colSpan=3D2>Chunk Data Bytes</TD></TR>
+        <TR>
+          <TD colSpan=3D3>
+            <CENTER><SMALL>RIFF Chunk=20
+      Format</SMALL></CENTER></TD></TR></TBODY></TABLE></CENTER>
+      <P>The rest of this document goes through the different types of =
+Wave=20
+      chunks, describing the format of their data bytes and what they =
+mean. You=20
+      can use the table of contents at the beginning of this document to =
+help=20
+      find the chunk type you are interested in. <A name=3Dfmt></A>
+      <H1>Format Chunk - "fmt "</H1>The format chunk contains =
+information about=20
+      how the waveform data is stored and should be played back =
+including the=20
+      type of compression used, number of channels, sample rate, bits =
+per sample=20
+      and other attributes.=20
+      <P>
+      <CENTER>
+      <TABLE cellSpacing=3D1 cellPadding=3D4>
+        <TBODY>
+        <TR bgColor=3D#999999>
+          <TD><B>Offset</B></TD>
+          <TD><B>Size</B></TD>
+          <TD><B>Description</B></TD>
+          <TD><B>Value</B></TD></TR>
+        <TR bgColor=3D#b0b0b0>
+          <TD>0x00</TD>
+          <TD>4</TD>
+          <TD>Chunk ID</TD>
+          <TD>"fmt " (0x666D7420)</TD></TR>
+        <TR bgColor=3D#b0b0b0>
+          <TD>0x04</TD>
+          <TD>4</TD>
+          <TD>Chunk Data Size</TD>
+          <TD>16 + extra format bytes</TD></TR>
+        <TR bgColor=3D#c0c0c0>
+          <TD>0x08</TD>
+          <TD>2</TD>
+          <TD>Compression code</TD>
+          <TD>1 - 65,535</TD></TR>
+        <TR bgColor=3D#c0c0c0>
+          <TD>0x0a</TD>
+          <TD>2</TD>
+          <TD>Number of channels</TD>
+          <TD>1 - 65,535</TD></TR>
+        <TR bgColor=3D#c0c0c0>
+          <TD>0x0c</TD>
+          <TD>4</TD>
+          <TD>Sample rate</TD>
+          <TD>1 - 0xFFFFFFFF</TD></TR>
+        <TR bgColor=3D#c0c0c0>
+          <TD>0x10</TD>
+          <TD>4</TD>
+          <TD>Average bytes per second</TD>
+          <TD>1 - 0xFFFFFFFF</TD></TR>
+        <TR bgColor=3D#c0c0c0>
+          <TD>0x14</TD>
+          <TD>2</TD>
+          <TD>Block align</TD>
+          <TD>1 - 65,535</TD></TR>
+        <TR bgColor=3D#c0c0c0>
+          <TD>0x16</TD>
+          <TD>2</TD>
+          <TD>Significant bits per sample</TD>
+          <TD>2 - 65,535</TD></TR>
+        <TR></TR>
+        <TR bgColor=3D#c0c0c0>
+          <TD>0x18</TD>
+          <TD>2</TD>
+          <TD>Extra format bytes</TD>
+          <TD>0 - 65,535</TD></TR>
+        <TR bgColor=3D#c0c0c0>
+          <TD>0x1a</TD>
+          <TD colSpan=3D3>
+            <CENTER>Extra format bytes =
+*</CENTER></TD></TR></TBODY></TABLE>Wave Format=20
+      Chunk Values, * read following text for details </CENTER>
+      <P><I>Chunk ID and Data Size</I><BR>The chunk ID is always "fmt "=20
+      (0x666D7420) and the size is the size of the standard wave format =
+data (16=20
+      bytes) plus the size of any extra format bytes needed for the =
+specific=20
+      Wave format, if it does not contain uncompressed PCM data. Note =
+the chunk=20
+      ID string ends with the space character (0x20).=20
+      <P><I>Compression Code</I><BR>The first word of format data =
+specifies the=20
+      type of compression used on the Wave data included in the Wave =
+chunk found=20
+      in this "RIFF" chunk. The following is a list of the common =
+compression=20
+      codes used today.=20
+      <P>
+      <CENTER>
+      <TABLE border=3D0 cellSpacing=3D1 cellPadding=3D4 =
+bgColor=3D#000000>
+        <TBODY>
+        <TR bgColor=3D#dddddd>
+          <TD><B>Code</B></TD>
+          <TD><B>Description</B></TD></TR>
+        <TR bgColor=3D#dddddd>
+          <TD>0 (0x0000)</TD>
+          <TD>Unknown</TD></TR>
+        <TR bgColor=3D#dddddd>
+          <TD>1 (0x0001)</TD>
+          <TD>PCM/uncompressed</TD></TR>
+        <TR bgColor=3D#dddddd>
+          <TD>2 (0x0002)</TD>
+          <TD>Microsoft ADPCM</TD></TR>
+        <TR bgColor=3D#dddddd>
+          <TD>6 (0x0006)</TD>
+          <TD>ITU G.711 a-law</TD></TR>
+        <TR bgColor=3D#dddddd>
+          <TD>7 (0x0007)</TD>
+          <TD>ITU G.711 =C2=B5-law</TD></TR>
+        <TR bgColor=3D#dddddd>
+          <TD>17 (0x0011)</TD>
+          <TD>IMA ADPCM</TD></TR><!-- <tr bgcolor=3D"dddddd"><td>19 =
+(0x0013)</td><td>ADPCM (Sierra)</td></tr> -->
+        <TR bgColor=3D#dddddd>
+          <TD>20 (0x0016)</TD>
+          <TD>ITU G.723 ADPCM (Yamaha)</TD></TR>
+        <TR bgColor=3D#dddddd>
+          <TD>49 (0x0031)</TD>
+          <TD>GSM 6.10</TD></TR>
+        <TR bgColor=3D#dddddd>
+          <TD>64 (0x0040)</TD>
+          <TD>ITU G.721 ADPCM</TD></TR>
+        <TR bgColor=3D#dddddd>
+          <TD>80 (0x0050)</TD>
+          <TD>MPEG</TD></TR><!-- <tr bgcolor=3D"dddddd"><td>257 =
+(0x0101)</td><td>IBM =C2=B5-law</td></tr> --><!-- <tr =
+bgcolor=3D"dddddd"><td>258 (0x0102)</td><td>IBM a-law</td></tr> --><!-- =
+<tr bgcolor=3D"dddddd"><td>259 (0x0103)</td><td>IBM AVC Adaptive =
+Differential PCM</td></tr> -->
+        <TR bgColor=3D#dddddd>
+          <TD>65,536 (0xFFFF)</TD>
+          <TD>Experimental</TD></TR></TBODY></TABLE><SMALL>Common Wave =
+Compression=20
+      Codes</SMALL></CENTER>
+      <P><I>Number of Channels</I><BR>The number of channels specifies =
+how many=20
+      separate audio signals that are encoded in the wave data chunk. A =
+value of=20
+      1 means a mono signal, a value of 2 means a stereo signal, etc.=20
+      <P><I>Sample Rate</I><BR>The number of sample slices per second. =
+This=20
+      value is unaffected by the number of channels.=20
+      <P><I>Average Bytes Per Second</I><BR>This value indicates how =
+many bytes=20
+      of wave data must be streamed to a D/A converter per second in =
+order to=20
+      play the wave file. This information is useful when determining if =
+data=20
+      can be streamed from the source fast enough to keep up with =
+playback. This=20
+      value can be easily calculated with the formula:=20
+      <P><CODE>AvgBytesPerSec =3D SampleRate * BlockAlign </CODE>
+      <P><I>Block Align</I><BR>The number of bytes per sample slice. =
+This value=20
+      is not affected by the number of channels and can be calculated =
+with the=20
+      formula:=20
+      <P><CODE>BlockAlign =3D SignificantBitsPerSample / 8 * NumChannels =
+</CODE>
+      <P><I>Significant Bits Per Sample</I><BR>This value specifies the =
+number=20
+      of bits used to define each sample. This value is usually 8, 16, =
+24 or 32.=20
+      If the number of bits is not byte aligned (a multiple of 8) then =
+the=20
+      number of bytes used per sample is rounded up to the nearest byte =
+size and=20
+      the unused bytes are set to 0 and ignored.=20
+      <P><I>Extra Format Bytes</I><BR>This value specifies how many =
+additional=20
+      format bytes follow. It does not exist if the compression code is =
+0=20
+      (uncompressed PCM file) but may exist and have any value for other =
+
+      compression types depending on what compression information is =
+need to=20
+      decode the wave data. If this value is not word aligned (a =
+multiple of 2),=20
+      padding should be added to the end of this data to word align it, =
+but the=20
+      value should remain non-aligned. <A name=3Ddata></A>
+      <H1>Data Chunk - "data"</H1>The Wave Data Chunk contains the =
+digital audio=20
+      sample data which can be decoded using the format and compression =
+method=20
+      specified in the Wave Format Chunk. If the Compression Code is 1=20
+      (uncompressed PCM), then the Wave Data contains raw sample values. =
+This=20
+      document explains how an uncompressed PCM data is stored, but will =
+not get=20
+      into the many supported compression formats.=20
+      <P>Wave files usually contain only one data chunk, but they may =
+contain=20
+      more than one if they are contained within a <A=20
+      href=3D"http://www.sonicspot.com/guide/wavefiles.html#wavl">Wave =
+List=20
+      Chunk</A> ("wavl").=20
+      <P>
+      <CENTER>
+      <TABLE cellSpacing=3D1 cellPadding=3D4>
+        <TBODY>
+        <TR bgColor=3D#999999>
+          <TD><B>Offset</B></TD>
+          <TD><B>Length</B></TD>
+          <TD><B>Type</B></TD>
+          <TD><B>Description</B></TD>
+          <TD><B>Value</B></TD></TR>
+        <TR bgColor=3D#b0b0b0>
+          <TD>0x00</TD>
+          <TD>4</TD>
+          <TD>char[4]</TD>
+          <TD>chunk ID</TD>
+          <TD>"data" (0x64617461)</TD></TR>
+        <TR bgColor=3D#b0b0b0>
+          <TD>0x04</TD>
+          <TD>4</TD>
+          <TD>dword</TD>
+          <TD>chunk size</TD>
+          <TD>depends on sample length and compression</TD></TR>
+        <TR bgColor=3D#c0c0c0>
+          <TD>0x08</TD>
+          <TD colSpan=3D4>
+            <CENTER>sample =
+data</CENTER></TD></TR></TBODY></TABLE><SMALL>Data Chunk=20
+      Format</SMALL> </CENTER>
+      <P>Multi-channel digital audio samples are stored as interlaced =
+wave data=20
+      which simply means that the audio samples of a multi-channel (such =
+as=20
+      stereo and surround) wave file are stored by cycling through the =
+audio=20
+      samples for each channel before advancing to the next sample time. =
+This is=20
+      done so that the audio files can be played or streamed before the =
+entire=20
+      file can be read. This is handy when playing a large file from =
+disk (that=20
+      may not completely fit into memory) or streaming a file over the =
+Internet.=20
+      The values in the diagram below would be stored in a Wave file in =
+the=20
+      order they are listed in the Value column (top to bottom).=20
+      <P>
+      <CENTER>
+      <TABLE cellSpacing=3D1 cellPadding=3D4>
+        <TBODY>
+        <TR bgColor=3D#999999>
+          <TD><B>Time</B></TD>
+          <TD><B>Channel</B></TD>
+          <TD><B>Value</B></TD></TR>
+        <TR bgColor=3D#c0c0c0>
+          <TD vAlign=3Dtop rowSpan=3D2>0</TD>
+          <TD>1 (left)</TD>
+          <TD>0x0053</TD></TR>
+        <TR bgColor=3D#c0c0c0>
+          <TD>2 (right)</TD>
+          <TD>0x0024</TD></TR>
+        <TR bgColor=3D#c0c0c0>
+          <TD vAlign=3Dtop rowSpan=3D2>1</TD>
+          <TD>1 (left)</TD>
+          <TD>0x0057</TD></TR>
+        <TR bgColor=3D#c0c0c0>
+          <TD>2 (right)</TD>
+          <TD>0x0029</TD></TR>
+        <TR bgColor=3D#c0c0c0>
+          <TD vAlign=3Dtop rowSpan=3D2>2</TD>
+          <TD>1 (left)</TD>
+          <TD>0x0063</TD></TR>
+        <TR bgColor=3D#c0c0c0>
+          <TD>2 (right)</TD>
+          <TD>0x003C</TD></TR></TBODY></TABLE><SMALL>Interlaced Stereo =
+Wave=20
+      Samples</SMALL></CENTER>
+      <P>One point about sample data that may cause some confusion is =
+that when=20
+      samples are represented with 8-bits, they are specified as =
+unsigned=20
+      values. All other sample bit-sizes are specified as signed values. =
+For=20
+      example a 16-bit sample can range from -32,768 to +32,767 with a =
+mid-point=20
+      (silence) at 0.=20
+      <P>As mentioned earlier, all RIFF chunks (including WAVE "data" =
+chunks)=20
+      must be word aligned. If the sample data uses an odd number of =
+bytes, a=20
+      padding byte with a value of zero must be placed at the end of the =
+sample=20
+      data. The "data" chunk header's size should not include this byte. =
+<A=20
+      name=3Dfact></A>
+      <H1>Fact Chunk - "fact"</H1>A fact chunk stores compression code =
+dependant=20
+      information about the contents of the Wave file. It is required by =
+all=20
+      compressed WAVE formats and if the waveform data is contained =
+inside a=20
+      "wavl" LIST chunk, but is not required for the uncompressed PCM =
+WAVE=20
+      format files (compression code 1) that contain the waveform data =
+inside a=20
+      "data" chunk.=20
+      <P>
+      <CENTER>
+      <TABLE cellSpacing=3D1 cellPadding=3D4>
+        <TBODY>
+        <TR bgColor=3D#999999>
+          <TD><B>Offset</B></TD>
+          <TD><B>Size</B></TD>
+          <TD><B>Description</B></TD>
+          <TD><B>Value</B></TD></TR>
+        <TR bgColor=3D#b0b0b0>
+          <TD>0x00</TD>
+          <TD>4</TD>
+          <TD>Chunk ID</TD>
+          <TD>"fact" (0x66616374)</TD></TR>
+        <TR bgColor=3D#b0b0b0>
+          <TD>0x04</TD>
+          <TD>4</TD>
+          <TD>Chunk Data Size</TD>
+          <TD>depends on format</TD></TR>
+        <TR bgColor=3D#c0c0c0>
+          <TD>0x08</TD>
+          <TD colSpan=3D3>
+            <CENTER>Format Dependant=20
+      Data</CENTER></TD></TR></TBODY></TABLE><SMALL>Fact Chunk =
+Format</SMALL>=20
+      </CENTER>
+      <P><I>Format Dependant Data</I><BR>There is currently only one =
+field=20
+      defined for the format dependant data. It is a single 4-byte value =
+that=20
+      specifies the number of samples in the waveform data chunk. This =
+value can=20
+      be used with the Samples Per Second value specified in the format =
+chunk to=20
+      calculate the waveforms length in seconds.=20
+      <P>As new WAVE formats are introduced, the fact chunk will be =
+expanded,=20
+      appending fields after the defined number of samples field. =
+Applications=20
+      can use the fact chunk size to determine which fields are present =
+in the=20
+      chunk. <A name=3Dwavl></A>
+      <H1>Wave List Chunk - "wavl"</H1>A wave list chunk is used to =
+specify=20
+      several alternating "slnt" and "data" chunks. These chunks can =
+help reduce=20
+      a Wave file's size while specifying audible segments of samples =
+when a=20
+      stream of digital audio contains several periods of silence.=20
+      <P>This type of chunk is considered to be an abuse of the Wave =
+file format=20
+      by many programmers (including myself) and it's support is not=20
+      recommended. Also many programs will not recognize this type of =
+chunk,=20
+      simply ignoring it. This form of compression unnecessarily =
+complicates the=20
+      structure of a Wave file and could be better implemented in other =
+ways,=20
+      including the use of several existing compression formats.=20
+      <P>
+      <CENTER>
+      <TABLE cellSpacing=3D1 cellPadding=3D4>
+        <TBODY>
+        <TR bgColor=3D#999999>
+          <TD><B>Offset</B></TD>
+          <TD><B>Size</B></TD>
+          <TD><B>Description</B></TD>
+          <TD><B>Value</B></TD></TR>
+        <TR bgColor=3D#b0b0b0>
+          <TD>0x00</TD>
+          <TD>4</TD>
+          <TD>Chunk ID</TD>
+          <TD>"slnt" (0x736C6E74)</TD></TR>
+        <TR bgColor=3D#b0b0b0>
+          <TD>0x04</TD>
+          <TD>4</TD>
+          <TD>Chunk Data Size</TD>
+          <TD>depends on size of data and slnt chunks</TD></TR>
+        <TR bgColor=3D#c0c0c0>
+          <TD>0x08</TD>
+          <TD colSpan=3D3>List of Alternating "slnt" and "data"=20
+        Chunks</TD></TR></TBODY></TABLE><SMALL>Wave List Chunk =
+Format</SMALL>=20
+      </CENTER><A name=3Dslnt></A>
+      <H1>Silent Chunk - "slnt"</H1>A silent chunk is used to specify a =
+segment=20
+      of silence that will last some duration of samples. It is always =
+contained=20
+      within a wave list chunk. While this chunk represents silence, it =
+does not=20
+      necessarily define a zero volume or baseline sample. It actually =
+holds the=20
+      last sample value present in the preceding data chunk in the wave =
+list=20
+      chunk. If there is no preceding data chunk in the wave list chunk, =
+a=20
+      baseline value should be used (127 for 8-bit data, 0 for 16-bit or =
+higher=20
+      data). This may seem trivial, but if not followed, may cause =
+undesired=20
+      clicks and pops in the audio signal.=20
+      <P>
+      <CENTER>
+      <TABLE cellSpacing=3D1 cellPadding=3D4>
+        <TBODY>
+        <TR bgColor=3D#999999>
+          <TD><B>Offset</B></TD>
+          <TD><B>Size</B></TD>
+          <TD><B>Description</B></TD>
+          <TD><B>Value</B></TD></TR>
+        <TR bgColor=3D#b0b0b0>
+          <TD>0x00</TD>
+          <TD>4</TD>
+          <TD>Chunk ID</TD>
+          <TD>"slnt" (0x736C6E74)</TD></TR>
+        <TR bgColor=3D#b0b0b0>
+          <TD>0x04</TD>
+          <TD>4</TD>
+          <TD>Chunk Data Size</TD>
+          <TD>4</TD></TR>
+        <TR bgColor=3D#c0c0c0>
+          <TD>0x08</TD>
+          <TD>4</TD>
+          <TD>Number of Silent Samples</TD>
+          <TD>0 - 0xFFFFFFFF</TD></TR></TBODY></TABLE><SMALL>Silent =
+Chunk=20
+      Format</SMALL> </CENTER>
+      <P><I>Number of Silent Samples</I><BR>This value specifies the =
+number of=20
+      silent samples that appear in the waveform at this point in the =
+wave list=20
+      chunk. <A name=3Dcue></A>
+      <H1>Cue Chunk - "cue "</H1>A cue chunk specifies one or more =
+sample=20
+      offsets which are often used to mark noteworthy sections of audio. =
+For=20
+      example, the beginning and end of a verse in a song may have cue =
+points to=20
+      make them easier to find. The cue chunk is optional and if =
+included, a=20
+      single cue chunk should specify all cue points for the "WAVE" =
+chunk. No=20
+      more than one cue chunk is allowed in a "WAVE" chunk.=20
+      <P>
+      <CENTER>
+      <TABLE cellSpacing=3D1 cellPadding=3D4>
+        <TBODY>
+        <TR bgColor=3D#999999>
+          <TD><B>Offset</B></TD>
+          <TD><B>Size</B></TD>
+          <TD><B>Description</B></TD>
+          <TD><B>Value</B></TD></TR>
+        <TR bgColor=3D#b0b0b0>
+          <TD>0x00</TD>
+          <TD>4</TD>
+          <TD>Chunk ID</TD>
+          <TD>"cue " (0x63756520)</TD></TR>
+        <TR bgColor=3D#b0b0b0>
+          <TD>0x04</TD>
+          <TD>4</TD>
+          <TD>Chunk Data Size</TD>
+          <TD>depends on Num Cue Points</TD></TR>
+        <TR bgColor=3D#c0c0c0>
+          <TD>0x08</TD>
+          <TD>4</TD>
+          <TD>Num Cue Points</TD>
+          <TD>number of cue points in list</TD></TR>
+        <TR bgColor=3D#c0c0c0>
+          <TD>0x0c</TD>
+          <TD colSpan=3D3>
+            <CENTER>List of Cue =
+Points</CENTER></TD></TR></TBODY></TABLE><SMALL>Cue=20
+      Chunk Format</SMALL> </CENTER>
+      <P><I>Chunk ID and Data Size</I><BR>The chunk ID for a cue chunk =
+is always=20
+      "cue " (0x666D7420). Note that the chunk ID string ends with the =
+space=20
+      character (0x20). The chunk data size is equal to the size of the =
+Num Cue=20
+      Points value (4) plus the number of following cue points =
+multiplied by the=20
+      size of each cue point's data (24). The following formula can be =
+used to=20
+      calculate a Cue Chunk's data size:=20
+      <P><CODE>ChunkDataSize =3D 4 + (NumCuePoints * 24)</CODE>=20
+      <P><I>Num Cue Points</I><BR>This value specifies the number of =
+following=20
+      cue points in this chunk.=20
+      <P><I>List of Cue Points</I><BR>A list of cue points is simply a =
+set of=20
+      consecutive cue point descriptions that follow the format =
+described below.=20
+
+      <P>
+      <CENTER>
+      <TABLE cellSpacing=3D1 cellPadding=3D4>
+        <TBODY>
+        <TR bgColor=3D#999999>
+          <TD><B>Offset</B></TD>
+          <TD><B>Size</B></TD>
+          <TD><B>Description</B></TD>
+          <TD><B>Value</B></TD></TR>
+        <TR bgColor=3D#c0c0c0>
+          <TD>0x00</TD>
+          <TD>4</TD>
+          <TD>ID</TD>
+          <TD>unique identification value</TD></TR>
+        <TR bgColor=3D#c0c0c0>
+          <TD>0x04</TD>
+          <TD>4</TD>
+          <TD>Position</TD>
+          <TD>play order position</TD></TR>
+        <TR bgColor=3D#c0c0c0>
+          <TD>0x08</TD>
+          <TD>4</TD>
+          <TD>Data Chunk ID</TD>
+          <TD>RIFF ID of corresponding data chunk</TD></TR>
+        <TR bgColor=3D#c0c0c0>
+          <TD>0x0c</TD>
+          <TD>4</TD>
+          <TD>Chunk Start</TD>
+          <TD>Byte Offset of Data Chunk *</TD></TR>
+        <TR bgColor=3D#c0c0c0>
+          <TD>0x10</TD>
+          <TD>4</TD>
+          <TD>Block Start</TD>
+          <TD>Byte Offset to sample of First Channel</TD></TR>
+        <TR bgColor=3D#c0c0c0>
+          <TD>0x14</TD>
+          <TD>4</TD>
+          <TD>Sample Offset</TD>
+          <TD>Byte Offset to sample byte of First=20
+      Channel</TD></TR></TBODY></TABLE><SMALL>Cue Point Format</SMALL> =
+</CENTER>
+      <P><I>ID</I><BR>Each cue point has a unique identification value =
+used to=20
+      associate cue points with information in other chunks. For =
+example, a=20
+      Label chunk contains text that describes a point in the wave file =
+by=20
+      referencing the associated cue point.=20
+      <P><I>Position</I><BR>The position specifies the sample offset =
+associated=20
+      with the cue point in terms of the sample's position in the final =
+stream=20
+      of samples generated by the play list. Said in another way, if a =
+play list=20
+      chunk is specified, the position value is equal to the sample =
+number at=20
+      which this cue point will occur during playback of the entire play =
+list as=20
+      defined by the play list's order. If no play list chunk is =
+specified this=20
+      value should be 0.=20
+      <P><I>Data Chunk ID</I><BR>This value specifies the four byte ID =
+used by=20
+      the chunk containing the sample that corresponds to this cue =
+point. A Wave=20
+      file with no play list is always "data". A Wave file with a play =
+list=20
+      containing both sample data and silence may be either "data" or =
+"slnt".=20
+      <P><I>Chunk Start</I><BR>The Chunk Start value specifies the byte =
+offset=20
+      into the Wave List Chunk of the chunk containing the sample that=20
+      corresponds to this cue point. This is the same chunk described by =
+the=20
+      Data Chunk ID value. If no Wave List Chunk exists in the Wave =
+file, this=20
+      value is 0. If a Wave List Chunk exists, this is the offset into =
+the=20
+      "wavl" chunk. The first chunk in the Wave List Chunk would be =
+specified=20
+      with a value of 0.=20
+      <P><I>Block Start</I><BR>The Block Start value specifies the byte =
+offset=20
+      into the "data" or "slnt" Chunk to the start of the block =
+containing the=20
+      sample. The start of a block is defined as the first byte in =
+uncompressed=20
+      PCM wave data or the last byte in compressed wave data where =
+decompression=20
+      can begin to find the value of the corresponding sample value.=20
+      <P><I>Sample Offset</I><BR>The Sample Offset specifies an offset =
+into the=20
+      block (specified by Block Start) for the sample that corresponds =
+to the=20
+      cue point. In uncompressed PCM waveform data, this is simply the =
+byte=20
+      offset into the "data" chunk. In compressed waveform data, this =
+value is=20
+      equal to the number of samples (may or may not be bytes) from the =
+Block=20
+      Start to the sample that corresponds to the cue point. <A =
+name=3Dplst></A>
+      <H1>Playlist Chunk - "plst"</H1>The playlist chunk specifies the =
+play=20
+      order of a series of cue points. The cue points are defined in the =
+cue=20
+      chunk, somewhere else in the file. A playlist consists of an array =
+of=20
+      segments, each containing information about what sample the =
+segment should=20
+      start playing from, how long the segment is (in samples) and how =
+many=20
+      times to repeat the segment before moving on to the next segment =
+in the=20
+      play order.=20
+      <P>
+      <CENTER>
+      <TABLE cellSpacing=3D1 cellPadding=3D4>
+        <TBODY>
+        <TR bgColor=3D#999999>
+          <TD><B>Offset</B></TD>
+          <TD><B>Size</B></TD>
+          <TD><B>Description</B></TD>
+          <TD><B>Value</B></TD></TR>
+        <TR bgColor=3D#b0b0b0>
+          <TD>0x00</TD>
+          <TD>4</TD>
+          <TD>Chunk ID</TD>
+          <TD>"plst" (0x736C6E74)</TD></TR>
+        <TR bgColor=3D#b0b0b0>
+          <TD>0x04</TD>
+          <TD>4</TD>
+          <TD>Chunk Data Size</TD>
+          <TD>num segments * 12</TD></TR>
+        <TR bgColor=3D#c0c0c0>
+          <TD>0x08</TD>
+          <TD>4</TD>
+          <TD>Number of Segments</TD>
+          <TD>1 - 0xFFFFFFFF</TD></TR>
+        <TR bgColor=3D#c0c0c0>
+          <TD>0x0a</TD>
+          <TD colSpan=3D3>
+            <CENTER>List of =
+Segments</CENTER></TD></TR></TBODY></TABLE><SMALL>Playlist=20
+      Chunk Format</SMALL> </CENTER>
+      <P><I>Number of Segments</I><BR>This value specifies the number of =
+
+      following segments in the playlist chunk.=20
+      <P><I>List of Segments</I><BR>A list of segments is simply a set =
+of=20
+      consecutive segment descriptions that follow the format described =
+below.=20
+      The segments do not have to be in any particular order because =
+each=20
+      segments associated cue point position is used to determine the =
+play=20
+      order.=20
+      <P>
+      <CENTER>
+      <TABLE cellSpacing=3D1 cellPadding=3D4>
+        <TBODY>
+        <TR bgColor=3D#999999>
+          <TD><B>Offset</B></TD>
+          <TD><B>Size</B></TD>
+          <TD><B>Description</B></TD>
+          <TD><B>Value</B></TD></TR>
+        <TR bgColor=3D#c0c0c0>
+          <TD>0x00</TD>
+          <TD>4</TD>
+          <TD>Cue Point ID</TD>
+          <TD>0 - 0xFFFFFFFF</TD></TR>
+        <TR bgColor=3D#c0c0c0>
+          <TD>0x04</TD>
+          <TD>4</TD>
+          <TD>Length (in samples)</TD>
+          <TD>1 - 0xFFFFFFFF</TD></TR>
+        <TR bgColor=3D#c0c0c0>
+          <TD>0x08</TD>
+          <TD>4</TD>
+          <TD>Number of Repeats</TD>
+          <TD>1 - 0xFFFFFFFF</TD></TR></TBODY></TABLE><SMALL>Segment =
+Format</SMALL>=20
+      </CENTER>
+      <P><I>Cue Point ID</I><BR>The Cue Point ID specifies the starting =
+sample=20
+      for this segment by providing the value of a Cue Point defined in =
+the Cue=20
+      Point List. The ID that associates this segment with a Cue Point =
+must be=20
+      unique to all other segment Cue Point IDs.=20
+      <P><I>Length</I><BR>The Segment Length specifies the number of =
+samples to=20
+      play/loop from the starting sample defined by the associated Cue =
+Point.=20
+      <P><I>Number of Repeats</I><BR>The number of repeats determines =
+how many=20
+      times this segment should be looped before playback should =
+continue onto=20
+      the next segment. <A name=3Dlist></A>
+      <H1>Associated Data List Chunk - "list"</H1>An associated data =
+list chunk=20
+      is used to define text labels and names which are associated with =
+the cue=20
+      points to provide each text label or name a position.=20
+      <P>
+      <CENTER>
+      <TABLE cellSpacing=3D1 cellPadding=3D4>
+        <TBODY>
+        <TR bgColor=3D#999999>
+          <TD><B>Offset</B></TD>
+          <TD><B>Size</B></TD>
+          <TD><B>Description</B></TD>
+          <TD><B>Value</B></TD></TR>
+        <TR bgColor=3D#b0b0b0>
+          <TD>0x00</TD>
+          <TD>4</TD>
+          <TD>Chunk ID</TD>
+          <TD>"list" (0x6C696E74)</TD></TR>
+        <TR bgColor=3D#b0b0b0>
+          <TD>0x04</TD>
+          <TD>4</TD>
+          <TD>Chunk Data Size</TD>
+          <TD>depends on contained text</TD></TR>
+        <TR bgColor=3D#c0c0c0>
+          <TD>0x08</TD>
+          <TD>4</TD>
+          <TD>Type ID</TD>
+          <TD>"adtl" (0x6164746C)</TD></TR>
+        <TR bgColor=3D#c0c0c0>
+          <TD>0x0c</TD>
+          <TD colSpan=3D3>
+            <CENTER>List of Text Labels and=20
+      Names</CENTER></TD></TR></TBODY></TABLE><SMALL>Associated Data =
+List Chunk=20
+      Format</SMALL> </CENTER>
+      <P><I>Type ID</I><BR>The type ID is used to identify the type of=20
+      associated data list and is always "adtl".=20
+      <P><I>List of Text Labels and Names</I><BR>The list of text labels =
+and=20
+      names is a list of assorted chunks that define text in different =
+ways. The=20
+      three main chunk types that are used in WAVE files are the Label =
+Chunk,=20
+      Note Chunk and Labeled Text Chunk. <A name=3Dlabl></A>
+      <H1>Label Chunk - "labl"</H1>The label chunk is always contained =
+inside of=20
+      an associated data list chunk. It is used to associate a text =
+label with a=20
+      Cue Point. This information is often displayed next to markers or =
+flags in=20
+      digital audio editors.=20
+      <P>
+      <CENTER>
+      <TABLE cellSpacing=3D1 cellPadding=3D4>
+        <TBODY>
+        <TR bgColor=3D#999999>
+          <TD><B>Offset</B></TD>
+          <TD><B>Size</B></TD>
+          <TD><B>Description</B></TD>
+          <TD><B>Value</B></TD></TR>
+        <TR bgColor=3D#b0b0b0>
+          <TD>0x00</TD>
+          <TD>4</TD>
+          <TD>Chunk ID</TD>
+          <TD>"labl" (0x6C61626C)</TD></TR>
+        <TR bgColor=3D#b0b0b0>
+          <TD>0x04</TD>
+          <TD>4</TD>
+          <TD>Chunk Data Size</TD>
+          <TD>depends on contained text</TD></TR>
+        <TR bgColor=3D#c0c0c0>
+          <TD>0x08</TD>
+          <TD>4</TD>
+          <TD>Cue Point ID</TD>
+          <TD>0 - 0xFFFFFFFF</TD></TR>
+        <TR bgColor=3D#c0c0c0>
+          <TD>0x0c</TD>
+          <TD colSpan=3D3>
+            <CENTER>Text</CENTER></TD></TR></TBODY></TABLE><SMALL>Label =
+Chunk=20
+      Format</SMALL> </CENTER>
+      <P><I>Cue Point ID</I><BR>The Cue Point ID specifies the sample =
+point that=20
+      corresponds to this text label by providing the ID of a Cue Point =
+defined=20
+      in the Cue Point List. The ID that associates this label with a =
+Cue Point=20
+      must be unique to all other label Cue Point IDs.=20
+      <P><I>Text</I><BR>The text is a null terminated string of =
+characters. If=20
+      the number of characters in the string is not even, padding must =
+be=20
+      appended to the string. The appended padding is not considered in =
+the=20
+      label chunk's chunk size field. <A name=3Dnote></A>
+      <H1>Note Chunk - "note"</H1>The label chunk is always contained =
+inside of=20
+      an associated data list chunk. It is used to associate a text =
+comment with=20
+      a Cue Point. This information is stored in an identical fashion to =
+the=20
+      labels in the label chunk.=20
+      <P>
+      <CENTER>
+      <TABLE cellSpacing=3D1 cellPadding=3D4>
+        <TBODY>
+        <TR bgColor=3D#999999>
+          <TD><B>Offset</B></TD>
+          <TD><B>Size</B></TD>
+          <TD><B>Description</B></TD>
+          <TD><B>Value</B></TD></TR>
+        <TR bgColor=3D#b0b0b0>
+          <TD>0x00</TD>
+          <TD>4</TD>
+          <TD>Chunk ID</TD>
+          <TD>"note" (0x6E6F7465)</TD></TR>
+        <TR bgColor=3D#b0b0b0>
+          <TD>0x04</TD>
+          <TD>4</TD>
+          <TD>Chunk Data Size</TD>
+          <TD>depends on contained text</TD></TR>
+        <TR bgColor=3D#c0c0c0>
+          <TD>0x08</TD>
+          <TD>4</TD>
+          <TD>Cue Point ID</TD>
+          <TD>0 - 0xFFFFFFFF</TD></TR>
+        <TR bgColor=3D#c0c0c0>
+          <TD>0x0C</TD>
+          <TD colSpan=3D3>
+            <CENTER>Text</CENTER></TD></TR></TBODY></TABLE><SMALL>Label =
+Chunk=20
+      Format</SMALL> </CENTER>
+      <P><I>Cue Point ID</I><BR>The Cue Point ID specifies the sample =
+point that=20
+      corresponds to this text comment by providing the ID of a Cue =
+Point=20
+      defined in the Cue Point List. The ID that associates this label =
+with a=20
+      Cue Point must be unique to all other note chunk Cue Point IDs.=20
+      <P><I>Text</I><BR>The text is a null terminated string of =
+characters. If=20
+      the number of characters in the string is not even, padding must =
+be=20
+      appended to the string. The appended padding is not considered in =
+the note=20
+      chunk's chunk size field. <A name=3Dltxt></A>
+      <H1>Labeled Text Chunk - "ltxt"</H1>The labeled text chunk is =
+always=20
+      contained inside of an associated data list chunk. It is used to =
+associate=20
+      a text label with a region or section of waveform data. This =
+information=20
+      is often displayed in marked regions of a waveform in digital =
+audio=20
+      editors.=20
+      <P>
+      <CENTER>
+      <TABLE cellSpacing=3D1 cellPadding=3D4>
+        <TBODY>
+        <TR bgColor=3D#999999>
+          <TD><B>Offset</B></TD>
+          <TD><B>Size</B></TD>
+          <TD><B>Description</B></TD>
+          <TD><B>Value</B></TD></TR>
+        <TR bgColor=3D#b0b0b0>
+          <TD>0x00</TD>
+          <TD>4</TD>
+          <TD>Chunk ID</TD>
+          <TD>"ltxt" (0x6C747874)</TD></TR>
+        <TR bgColor=3D#b0b0b0>
+          <TD>0x04</TD>
+          <TD>4</TD>
+          <TD>Chunk Data Size</TD>
+          <TD>depends on contained text</TD></TR>
+        <TR bgColor=3D#c0c0c0>
+          <TD>0x08</TD>
+          <TD>4</TD>
+          <TD>Cue Point ID</TD>
+          <TD>0 - 0xFFFFFFFF</TD></TR>
+        <TR bgColor=3D#c0c0c0>
+          <TD>0x0c</TD>
+          <TD>4</TD>
+          <TD>Sample Length</TD>
+          <TD>0 - 0xFFFFFFFF</TD></TR>
+        <TR bgColor=3D#c0c0c0>
+          <TD>0x10</TD>
+          <TD>4</TD>
+          <TD>Purpose ID</TD>
+          <TD>0 - 0xFFFFFFFF</TD></TR>
+        <TR bgColor=3D#c0c0c0>
+          <TD>0x12</TD>
+          <TD>2</TD>
+          <TD>Country</TD>
+          <TD>0 - 0xFFFF</TD></TR>
+        <TR bgColor=3D#c0c0c0>
+          <TD>0x14</TD>
+          <TD>2</TD>
+          <TD>Language</TD>
+          <TD>0 - 0xFFFF</TD></TR>
+        <TR bgColor=3D#c0c0c0>
+          <TD>0x16</TD>
+          <TD>2</TD>
+          <TD>Dialect</TD>
+          <TD>0 - 0xFFFF</TD></TR>
+        <TR bgColor=3D#c0c0c0>
+          <TD>0x18</TD>
+          <TD>2</TD>
+          <TD>Code Page</TD>
+          <TD>0 - 0xFFFF</TD></TR>
+        <TR bgColor=3D#c0c0c0>
+          <TD>0x1A</TD>
+          <TD colSpan=3D3>
+            <CENTER>Text</CENTER></TD></TR></TBODY></TABLE><SMALL>Label =
+Chunk=20
+      Format</SMALL> </CENTER>
+      <P><I>Cue Point ID</I><BR>The Cue Point ID specifies the starting =
+sample=20
+      point that corresponds to this text label by providing the ID of a =
+Cue=20
+      Point defined in the Cue Point List. The ID that associates this =
+label=20
+      with a Cue Point must be unique to all other note chunk Cue Point =
+IDs.=20
+      <P><I>Sample Length</I><BR>The sample length defines how many =
+samples from=20
+      the cue point the region or section spans.=20
+      <P><I>Purpose ID</I><BR>The purpose field specifies what the text =
+is used=20
+      for. For example a value of "scrp" means script text, and "capt" =
+means=20
+      close-caption. There are several more purpose IDs, but they are =
+meant to=20
+      be used with other types of RIFF files (not usually found in WAVE =
+files).=20
+      <P><I>Country, Language, Dialect and Code Page</I><BR>These fields =
+are=20
+      used to specify information about the location and language used =
+by the=20
+      text and are typically used for queries to obtain information from =
+the=20
+      operating system.=20
+      <P><I>Text</I><BR>The text is a null terminated string of =
+characters. If=20
+      the number of characters in the string is not even, padding must =
+be=20
+      appended to the string. The appended padding is not considered in =
+the note=20
+      chunk's chunk size field. <A name=3Dsmpl></A>
+      <H1>Sampler Chunk - "smpl"</H1>
+      <P>
+      <CENTER>
+      <TABLE cellSpacing=3D1 cellPadding=3D4>
+        <TBODY>
+        <TR bgColor=3D#999999>
+          <TD><B>Offset</B></TD>
+          <TD><B>Size</B></TD>
+          <TD><B>Description</B></TD>
+          <TD><B>Value</B></TD></TR>
+        <TR bgColor=3D#b0b0b0>
+          <TD>0x00</TD>
+          <TD>4</TD>
+          <TD>Chunk ID</TD>
+          <TD>"smpl" (0x736D706C)</TD></TR>
+        <TR bgColor=3D#b0b0b0>
+          <TD>0x04</TD>
+          <TD>4</TD>
+          <TD>Chunk Data Size</TD>
+          <TD>36 + (Num Sample Loops * 24) + Sampler Data</TD></TR>
+        <TR bgColor=3D#c0c0c0>
+          <TD>0x08</TD>
+          <TD>4</TD>
+          <TD>Manufacturer</TD>
+          <TD>0 - 0xFFFFFFFF</TD></TR>
+        <TR bgColor=3D#c0c0c0>
+          <TD>0x0C</TD>
+          <TD>4</TD>
+          <TD>Product</TD>
+          <TD>0 - 0xFFFFFFFF</TD></TR>
+        <TR bgColor=3D#c0c0c0>
+          <TD>0x10</TD>
+          <TD>4</TD>
+          <TD>Sample Period</TD>
+          <TD>0 - 0xFFFFFFFF</TD></TR>
+        <TR bgColor=3D#c0c0c0>
+          <TD>0x14</TD>
+          <TD>4</TD>
+          <TD>MIDI Unity Note</TD>
+          <TD>0 - 127</TD></TR>
+        <TR bgColor=3D#c0c0c0>
+          <TD>0x18</TD>
+          <TD>4</TD>
+          <TD>MIDI Pitch Fraction</TD>
+          <TD>0 - 0xFFFFFFFF</TD></TR>
+        <TR bgColor=3D#c0c0c0>
+          <TD>0x1C</TD>
+          <TD>4</TD>
+          <TD>SMPTE Format</TD>
+          <TD>0, 24, 25, 29, 30</TD></TR>
+        <TR bgColor=3D#c0c0c0>
+          <TD>0x20</TD>
+          <TD>4</TD>
+          <TD>SMPTE Offset</TD>
+          <TD>0 - 0xFFFFFFFF</TD></TR>
+        <TR bgColor=3D#c0c0c0>
+          <TD>0x24</TD>
+          <TD>4</TD>
+          <TD>Num Sample Loops</TD>
+          <TD>0 - 0xFFFFFFFF</TD></TR>
+        <TR bgColor=3D#c0c0c0>
+          <TD>0x28</TD>
+          <TD>4</TD>
+          <TD>Sampler Data</TD>
+          <TD>0 - 0xFFFFFFFF</TD></TR>
+        <TR bgColor=3D#c0c0c0>
+          <TD>0x2C</TD>
+          <TD colSpan=3D3>
+            <CENTER>List of Sample=20
+      Loops</CENTER></TD></TR></TBODY></TABLE><SMALL>Sampler Chunk=20
+      Format</SMALL> </CENTER>
+      <P><I>Manufacturer</I><BR>The manufacturer field specifies the =
+MIDI=20
+      Manufacturer's Association (MMA) Manufacturer code for the sampler =
+
+      intended to receive this file's waveform. Each manufacturer of a =
+MIDI=20
+      product is assigned a unique ID which identifies the company. If =
+no=20
+      particular manufacturer is to be specified, a value of 0 should be =
+used.=20
+      <P>The value is stored with some extra information to enable =
+translation=20
+      to the value used in a MIDI System Exclusive transmission to the =
+sampler.=20
+      The high byte indicates the number of low order bytes (1 or 3) =
+that are=20
+      valid for the manufacturer code. For example, the value for =
+Digidesign=20
+      will be 0x01000013 (0x13) and the value for Microsoft will be =
+0x30000041=20
+      (0x00, 0x00, 0x41). See the <A=20
+      =
+href=3D"http://www.sonicspot.com/guide/midimanufacturers.html">MIDI=20
+      Manufacturers List</A> for a list.=20
+      <P><I>Product</I><BR>The product field specifies the MIDI model ID =
+defined=20
+      by the manufacturer corresponding to the Manufacturer field. =
+Contact the=20
+      manufacturer of the sampler to get the model ID. If no particular=20
+      manufacturer's product is to be specified, a value of 0 should be =
+used.=20
+      <P><I>Sample Period</I><BR>The sample period specifies the =
+duration of=20
+      time that passes during the playback of one sample in nanoseconds=20
+      (normally equal to 1 / Samplers Per Second, where Samples Per =
+Second is=20
+      the value found in the format chunk).=20
+      <P><I>MIDI Unity Note</I><BR>The MIDI unity note value has the =
+same=20
+      meaning as the instrument chunk's MIDI Unshifted Note field which=20
+      specifies the musical note at which the sample will be played at =
+it's=20
+      original sample rate (the sample rate specified in the format =
+chunk).=20
+      <P><I>MIDI Pitch Fraction</I><BR>The MIDI pitch fraction specifies =
+the=20
+      fraction of a semitone up from the specified MIDI unity note =
+field. A=20
+      value of 0x80000000 means 1/2 semitone (50 cents) and a value of=20
+      0x00000000 means no fine tuning between semitones.=20
+      <P><I>SMPTE Format</I><BR>The SMPTE format specifies the Society =
+of Motion=20
+      Pictures and Television E time format used in the following SMPTE =
+Offset=20
+      field. If a value of 0 is set, SMPTE Offset should also be set to =
+0.=20
+      <P>
+      <CENTER>
+      <TABLE border=3D0 cellSpacing=3D1 cellPadding=3D4 =
+bgColor=3D#000000>
+        <TBODY>
+        <TR bgColor=3D#dddddd>
+          <TD><B>Value</B></TD>
+          <TD><B>SMPTE Format</B></TD></TR>
+        <TR bgColor=3D#dddddd>
+          <TD>0</TD>
+          <TD>no SMPTE offset</TD></TR>
+        <TR bgColor=3D#dddddd>
+          <TD>24</TD>
+          <TD>24 frames per second</TD></TR>
+        <TR bgColor=3D#dddddd>
+          <TD>25</TD>
+          <TD>25 frames per second</TD></TR>
+        <TR bgColor=3D#dddddd>
+          <TD>29</TD>
+          <TD>30 frames per second with frame dropping (30 =
+drop)</TD></TR>
+        <TR bgColor=3D#dddddd>
+          <TD>30</TD>
+          <TD>30 frames per second</TD></TR></TBODY></TABLE><SMALL>SMPTE =
+Format=20
+      Values</SMALL></CENTER>
+      <P><I>SMPTE Offset</I><BR>The SMPTE Offset value specifies the =
+time offset=20
+      to be used for the synchronization / calibration to the first =
+sample in=20
+      the waveform. This value uses a format of 0xhhmmssff where hh is a =
+signed=20
+      value that specifies the number of hours (-23 to 23), mm is an =
+unsigned=20
+      value that specifies the number of minutes (0 to 59), ss is an =
+unsigned=20
+      value that specifies the number of seconds (0 to 59) and ff is an =
+unsigned=20
+      value that specifies the number of frames (0 to -1).=20
+      <P><I>Sample Loops</I><BR>The sample loops field specifies the =
+number=20
+      Sample Loop definitions in the following list. This value may be =
+set to 0=20
+      meaning that no sample loops follow.=20
+      <P><I>Sampler Data</I><BR>The sampler data value specifies the =
+number of=20
+      bytes that will follow this chunk (including the entire sample =
+loop list).=20
+      This value is greater than 0 when an application needs to save =
+additional=20
+      information. This value is reflected in this chunks data size =
+value.=20
+      <P><I>List of Sample Loops</I><BR>A list of sample loops is simply =
+a set=20
+      of consecutive loop descriptions that follow the format described =
+below.=20
+      The sample loops do not have to be in any particular order because =
+each=20
+      sample loop associated cue point position is used to determine the =
+play=20
+      order. The sampler chunk is optional.=20
+      <P>
+      <CENTER>
+      <TABLE cellSpacing=3D1 cellPadding=3D4>
+        <TBODY>
+        <TR bgColor=3D#999999>
+          <TD><B>Offset</B></TD>
+          <TD><B>Size</B></TD>
+          <TD><B>Description</B></TD>
+          <TD><B>Value</B></TD></TR>
+        <TR bgColor=3D#c0c0c0>
+          <TD>0x00</TD>
+          <TD>4</TD>
+          <TD>Cue Point ID</TD>
+          <TD>0 - 0xFFFFFFFF</TD></TR>
+        <TR bgColor=3D#c0c0c0>
+          <TD>0x04</TD>
+          <TD>4</TD>
+          <TD>Type</TD>
+          <TD>0 - 0xFFFFFFFF</TD></TR>
+        <TR bgColor=3D#c0c0c0>
+          <TD>0x08</TD>
+          <TD>4</TD>
+          <TD>Start</TD>
+          <TD>0 - 0xFFFFFFFF</TD></TR>
+        <TR bgColor=3D#c0c0c0>
+          <TD>0x0C</TD>
+          <TD>4</TD>
+          <TD>End</TD>
+          <TD>0 - 0xFFFFFFFF</TD></TR>
+        <TR bgColor=3D#c0c0c0>
+          <TD>0x10</TD>
+          <TD>4</TD>
+          <TD>Fraction</TD>
+          <TD>0 - 0xFFFFFFFF</TD></TR>
+        <TR bgColor=3D#c0c0c0>
+          <TD>0x14</TD>
+          <TD>4</TD>
+          <TD>Play Count</TD>
+          <TD>0 - 0xFFFFFFFF</TD></TR></TBODY></TABLE><SMALL>Sample Loop =
+
+      Format</SMALL> </CENTER>
+      <P><I>Cue Point ID</I><BR>The Cue Point ID specifies the unique ID =
+that=20
+      corresponds to one of the defined cue points in the cue point =
+list.=20
+      Furthermore, this ID corresponds to any labels defined in the =
+associated=20
+      data list chunk which allows text labels to be assigned to the =
+various=20
+      sample loops.=20
+      <P><I>Type</I><BR>The type field defines how the waveform samples =
+will be=20
+      looped.=20
+      <P>
+      <CENTER>
+      <TABLE border=3D0 cellSpacing=3D1 cellPadding=3D4 =
+bgColor=3D#000000>
+        <TBODY>
+        <TR bgColor=3D#dddddd>
+          <TD><B>Value</B></TD>
+          <TD><B>Loop Type</B></TD></TR>
+        <TR bgColor=3D#dddddd>
+          <TD>0</TD>
+          <TD>Loop forward (normal)</TD></TR>
+        <TR bgColor=3D#dddddd>
+          <TD>1</TD>
+          <TD>Alternating loop (forward/backward, also known as Ping=20
+        Pong)</TD></TR>
+        <TR bgColor=3D#dddddd>
+          <TD>2</TD>
+          <TD>Loop backward (reverse)</TD></TR>
+        <TR bgColor=3D#dddddd>
+          <TD>3 - 31</TD>
+          <TD>Reserved for future standard types</TD></TR>
+        <TR bgColor=3D#dddddd>
+          <TD>32 - 0xFFFFFFFF</TD>
+          <TD>Sampler specific types (defined by=20
+      manufacturer)</TD></TR></TBODY></TABLE><SMALL>Loop Type=20
+      Values</SMALL></CENTER>
+      <P><I>Start</I><BR>The start value specifies the byte offset into =
+the=20
+      waveform data of the first sample to be played in the loop.=20
+      <P><I>End</I><BR>The end value specifies the byte offset into the =
+waveform=20
+      data of the last sample to be played in the loop.=20
+      <P><I>Fraction</I><BR>The fractional value specifies a fraction of =
+a=20
+      sample at which to loop. This allows a loop to be fine tuned at a=20
+      resolution greater than one sample. The value can range from =
+0x00000000 to=20
+      0xFFFFFFFF. A value of 0 means no fraction, a value of 0x80000000 =
+means=20
+      1/2 of a sample length. 0xFFFFFFFF is the smallest fraction of a =
+sample=20
+      that can be represented.=20
+      <P><I>Play Count</I><BR>The play count value determines the number =
+of=20
+      times to play the loop. A value of 0 specifies an infinite sustain =
+loop.=20
+      An infinite sustain loop will continue looping until some external =
+force=20
+      interrupts playback, such as the musician releasing the key that =
+triggered=20
+      the wave's playback. All other values specify an absolute number =
+of times=20
+      to loop. <A name=3Dinst></A>
+      <H1>Instrument Chunk - "inst"</H1>The instrument chunk is used to =
+describe=20
+      how the waveform should be played as an instrument sound. This =
+information=20
+      is useful for communicating musical information between =
+sample-based music=20
+      programs, such as trackers or software wavetables. This chunk is =
+optional=20
+      and no more than 1 may appear in a WAVE file.=20
+      <P>
+      <CENTER>
+      <TABLE cellSpacing=3D1 cellPadding=3D4>
+        <TBODY>
+        <TR bgColor=3D#999999>
+          <TD><B>Offset</B></TD>
+          <TD><B>Size</B></TD>
+          <TD><B>Description</B></TD>
+          <TD><B>Value</B></TD></TR>
+        <TR bgColor=3D#b0b0b0>
+          <TD>0x00</TD>
+          <TD>4</TD>
+          <TD>Chunk ID</TD>
+          <TD>"ltxt" (0x6C747874)</TD></TR>
+        <TR bgColor=3D#b0b0b0>
+          <TD>0x04</TD>
+          <TD>4</TD>
+          <TD>Chunk Data Size</TD>
+          <TD>7</TD></TR>
+        <TR bgColor=3D#c0c0c0>
+          <TD>0x08</TD>
+          <TD>1</TD>
+          <TD>Unshifted Note</TD>
+          <TD>0 - 127</TD></TR>
+        <TR bgColor=3D#c0c0c0>
+          <TD>0x09</TD>
+          <TD>1</TD>
+          <TD>Fine Tune (dB)</TD>
+          <TD>-50 - +50</TD></TR>
+        <TR bgColor=3D#c0c0c0>
+          <TD>0x0A</TD>
+          <TD>1</TD>
+          <TD>Gain</TD>
+          <TD>-64 - +64</TD></TR>
+        <TR bgColor=3D#c0c0c0>
+          <TD>0x0B</TD>
+          <TD>1</TD>
+          <TD>Low Note</TD>
+          <TD>0 - 127</TD></TR>
+        <TR bgColor=3D#c0c0c0>
+          <TD>0x0C</TD>
+          <TD>1</TD>
+          <TD>High Note</TD>
+          <TD>0 - 127</TD></TR>
+        <TR bgColor=3D#c0c0c0>
+          <TD>0x0D</TD>
+          <TD>1</TD>
+          <TD>Low Velocity</TD>
+          <TD>1 - 127</TD></TR>
+        <TR bgColor=3D#c0c0c0>
+          <TD>0x0E</TD>
+          <TD>1</TD>
+          <TD>High Velocity</TD>
+          <TD>1 - 127</TD></TR></TBODY></TABLE><SMALL>Instrument Chunk=20
+      Format</SMALL> </CENTER>
+      <P><I>Unshifted Note</I><BR>The unshifted note field has the same =
+meaning=20
+      as the sampler chunk's MIDI Unity Note which specifies the musical =
+note at=20
+      which the sample will be played at it's original sample rate (the =
+sample=20
+      rate specified in the format chunk).=20
+      <P><I>Fine Tune</I><BR>The fine tune value specifies how much the =
+sample's=20
+      pitch should be altered when the sound is played back in cents =
+(1/100 of a=20
+      semitone). A negative value means that the pitch should be played =
+lower=20
+      and a positive value means that it should be played at a higher =
+pitch.=20
+      <P><I>Gain</I><BR>The gain value specifies the number of decibels =
+to=20
+      adjust the output when it is played. A value of 0dB means no =
+change, 6dB=20
+      means double the amplitude of each sample and -6dB means to halve =
+the=20
+      amplitude of each sample. Every additional +/-6dB will double or =
+halve the=20
+      amplitude again.=20
+      <P><I>Low Note and High Note</I><BR>The note fields specify the =
+MIDI note=20
+      range for which the waveform should be played when receiving MIDI =
+note=20
+      events (from software or triggered by a MIDI controller). This =
+range does=20
+      not need to include the Unshifted Note value.=20
+      <P><I>Low Velocity and High Velocity</I><BR>The velocity fields =
+specify=20
+      the range of MIDI velocities that should cause the waveform to be =
+played.=20
+      1 being the lightest amount and 127 being the hardest. <A=20
+      name=3Dformatvariations></A>
+      <H1>Format Variations</H1>The down side to the Wave file format's=20
+      popularity is that out of the hundreds of programs that support =
+it, many=20
+      abuse or misuse it due to bad programming and/or poor =
+documentation. Once=20
+      some of these "naughty" programs get fairly popular and churn out =
+millions=20
+      of incorrect Wave files, the rest of the software industry is =
+forced to=20
+      deal with it and write code that can read the incorrect files. New =
+code=20
+      should never write these errors, but possibly read them. Below are =
+a few=20
+      exceptions that have been made to the strict/original Wave file =
+format.=20
+      <UL>
+        <LI>Incorrect Block Alignment value - this can be dealt with by=20
+        calculating the Block Alignment with the formula mentioned =
+above.=20
+        <LI>Incorrect Average Samples Per Second value - this can be =
+dealt with=20
+        by calculating the Average Samples Per Second with the formula =
+mentioned=20
+        above.=20
+        <LI>Missing word alignment padding - this can be difficult to =
+deal with,=20
+        but can be done by giving the user a warning when unrecognized =
+chunk=20
+        ID's are encountered where a one byte read offset produces a =
+recognized=20
+        chunk ID. This is not a concrete solution, but will usually work =
+even if=20
+        the program doesn't have a comprehensive list of legal IDs.=20
+  </LI></UL></TD></TR></TBODY></TABLE></DIV>
+<DIV class=3DIEFix>&nbsp;</DIV></DIV></DIV></DIV></DIV></DIV><!-- END: =
+"Wave File Format" Block --><!-- BEGIN: Related Block -->
+<DIV class=3DBlock>
+<DIV class=3DBlockTL>
+<DIV class=3DBlockTR>
+<H1>Related</H1>
+<DIV class=3DBlockBL>
+<DIV class=3DBlockBR>
+<DIV class=3DContent>
+<TABLE class=3DLayout border=3D0 cellSpacing=3D0 cellPadding=3D0>
+  <TBODY>
+  <TR>
+    <TD>
+      <P><B>Links:</B> <A=20
+      =
+href=3D"http://msdn.microsoft.com/library/techart/msdn_streams3.htm">Stre=
+aming=20
+      Wave Files with =
+DirectSound</A><BR></P></TD></TR></TBODY></TABLE></DIV>
+<DIV class=3DIEFix>&nbsp;</DIV></DIV></DIV></DIV></DIV></DIV><!-- END: =
+Related Block -->
+<DIV class=3DBottomLeaderBoardAd>
+<SCRIPT language=3DJavaScript type=3Dtext/javascript=20
+src=3D"http://www.sonicspot.com/phpadsnew/adx.js"></SCRIPT>
+
+<SCRIPT language=3DJavaScript type=3Dtext/javascript>=0A=
+<!--=0A=
+   if (!document.phpAds_used) document.phpAds_used =3D ',';=0A=
+   phpAds_random =3D new String (Math.random()); phpAds_random =3D =
+phpAds_random.substring(2,11);=0A=
+   =0A=
+   document.write ("<" + "script language=3D'JavaScript' =
+type=3D'text/javascript' src=3D'");=0A=
+   document.write ("http://www.sonicspot.com/phpadsnew/adjs.php?n=3D" + =
+phpAds_random);=0A=
+   document.write =
+("&amp;what=3D&lt;bottom&gt;,_[wavefiles],_728x90,&lt;bottom&gt;,_(wavefi=
+les),_728x90,&lt;bottom&gt;,_(fileformatspecs),_728x90,&lt;bottom&gt;,_(f=
+ileformats),_728x90,&lt;bottom&gt;,_(guide),_728x90,&lt;bottom&gt;,_(all)=
+,_728x90|&lt;bottom&gt;,_728x90|728x90");=0A=
+   document.write ("&amp;exclude=3D" + document.phpAds_used);=0A=
+   if (document.referrer)=0A=
+      document.write ("&amp;referer=3D" + escape(document.referrer));=0A=
+   document.write ("'><" + "/script>");=0A=
+//-->=0A=
+</SCRIPT>
+<NOSCRIPT><A =
+href=3D"http://www.sonicspot.com/phpadsnew/adclick.php?n=3Da14ed9fe"=20
+target=3D_blank><IMG border=3D0 alt=3D""=20
+src=3D"http://www.sonicspot.com/phpadsnew/adview.php?what=3D<bottom>,_[wa=
+vefiles],_728x90,<bottom>,_(wavefiles),_728x90,<bottom>,_(fileformatspecs=
+),_728x90,<bottom>,_(fileformats),_728x90,<bottom>,_(guide),_728x90,<bott=
+om>,_(all),_728x90|<bottom>,_728x90|728x90&amp;n=3Da14ed9fe"></A></NOSCRI=
+PT>=20
+</DIV><!-- BEGIN: Footer -->
+<DIV class=3DFooter>
+<P><A href=3D"http://www.sonicspot.com/copyright.html">Copyright</A> =A9 =
+1999-2007=20
+Sonic Spot</P>
+<P><A href=3D"http://www.sonicspot.com/info.html">About Us</A> | <A=20
+href=3D"http://www.sonicspot.com/privacy.html">Privacy =
+Statement</A></P></DIV><!-- END: Footer =
+--></DIV></DIV></DIV></DIV></DIV><!-- END: Body -->
+<SCRIPT type=3Dtext/javascript =
+src=3D"http://1382.hittail.com/mlt.js"></SCRIPT>
+
+<SCRIPT type=3Dtext/javascript=20
+src=3D"http://www.google-analytics.com/urchin.js">=0A=
+</SCRIPT>
+
+<SCRIPT type=3Dtext/javascript>=0A=
+_uacct =3D "UA-312677-2";=0A=
+urchinTracker();=0A=
+</SCRIPT>
+
+<SCRIPT>document.write('<script'+' =
+src=3D"http://crazyegg.com/pages'+'/scripts/3372.js?'+(new =
+Date()).getTime()+'" type=3D"text/javascript"></scr'+'ipt>');</SCRIPT>
+</BODY></HTML>
+
+------=_NextPart_000_0000_01C9C2AA.66E6A430
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: http://www.sonicspot.com/phpadsnew/adview.php?what=<button>,_[wavefiles],_120x60,<button>,_(wavefiles),_120x60,<button>,_(fileformatspecs),_120x60,<button>,_(fileformats),_120x60,<button>,_(guide),_120x60,<button>,_(all),_120x60|<button>,_120x60|120x60&n=a14ed9fe
+
+R0lGODlhAQABAIAAAAQCBAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==
+
+------=_NextPart_000_0000_01C9C2AA.66E6A430
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.sonicspot.com/images/Logo.gif
+
+R0lGODlhIwEzALMAAJgAAGMAABAAAL0AAEIAACEAABgAALUAAKUAAHkAADEAADkAAFIAACkAAM4A
+AAAAACwAAAAAIwEzAAAE//DJSau9OOvNu/9gKI5kaZ5oqq5s675wrDZAbd/SHcAGkQADh9BRIwhk
+LoFiyVwWkJzeLzgsHqEwZSCBIDxugO8kbEkMz8LEw3D2tmjouHCHTTHkDnq9Asef9XsmBAFAaFdi
+OWE1F1RyCw93QwWDDAYWWgEBC4cYBQB+cmSBJAh4T6MPnqBxoqghC3itooqIFLB4AxKlQgeNA5YS
+AgGNQgOPGATEq5KuIWxyB67Jy3GnzR9mcm45Y90VCplnB5lez3gKE7txCMjUcoDXGwRgNgyoBO5x
+8PEaykOcs7xZKPCHQqRzErLhuYAvHxo1GwqAyxSAgQJOI3pkYmCNhZJBFP8XdAzR0OEQiB8MLKCI
+LqUCBhQDKACm4RYrEwHOdFR3QNgZS+Yc2FPXSgJBk2eK2iqEB8GxCz/oqVmgbgiCkUbp1UBpwUCA
+qmgGJMDI4ShSIUWjglHTRxzWCgUSHPAzDkONudAAbAuB10G0CUG9KPw7WELffWBN7nvQoO8qpQ8E
+4CFE90JOOfYuKVw14G2GxA4BSX73Cc/fCwZKL0OA0SwozxELTjjo4EgjOrdTnXkqoWSoTP6G7JVw
+Od/wB74d8jaMh+aEAqAre0iOBgBwP3upu1suYUFwP1wfFJcuYvzOKg9sOniiPgHlYhYcnxnQYEID
+PyM3u1OqWjHcpl1995r/B/INQZ99+FHQX2gWqOdOLhQIOMRiHfR12hptPFCYhqCE5xoa8OBSgXbL
+FDXaWfCMd0ZmEwgQ3SotxTZZBSK2eNYccEnohy3UwKaBa4DQZtuEEki4nIpnxKibHFwZoGMsI97o
+wHAFCuEch2cpmQGSQyj54UkUkEjNcC+uQoF+0JBgHgVEpaeTm35AqKAfQeLB24JDjDMMlHPi4R6e
+XVLwpRDsCOqHdYAKoaVddBpkZ59xiBVAlYpSwKUDklLqQITLUMiBhRQEhqVfCeVZYZyHgCYnY7hc
+cSlXJ8ZRX2Q7WooHiznMSGtzp7aajhyrxorGrA6eQYEA3xFrWosKkDjA/xJkdQCko/88kJu1RLrG
+nYRkBHUGV4nqkSiuJIqiAJ8TUOrcfcBecS6wHnArgbdgTlDuBJe2ki++6PbmJ05v/ooWnEKw92Zx
+q46xynEY0FutBAkq7Ai/mBkqR6EToIkjcf1qkKhwHyT61LgUUDryrRWIbAKogGW44YZ9hVfqKrNu
+sG93y9oIr8DV2FqxznJYEx3DUC1TswbCGgh0zzjvvKscziUNXwnTznbGkBvnxm7BFxQbqY/MaZPx
+v/aSjWGaJfNaNtpnQ+2B12GBjZzZJF6osQMo1R0lkwAzw3MY6j0RKwBUoYfBk51psHVYVyCLx9GJ
+1nwpIIsnlbKu4nW8Af/iYEcusT4tJvs5iJfLcbQILM/rsqkPvAvslT5zBtvdeeesOtsPqHsmHns5
+bGW6vINwadwZ+H6a7w7QpPftbreMuwhVSyAkthtTHxZ3xz6JabTWo3HyO9SCbhSAnMrBCW1nYDyo
+ENxj4PgyA3CPPpHSk58r+PVfXMH81Y+w5t8EW88EFuAYscCuQfvpWo2exjRdmIJiccAV3IoSHRZN
+JCbkEAHcbnKB6AgNZcGI2AMqWAEP8mNeTgDBx4ZVBrrZrm1ouJDuxiY25zXPBSs8w+lgKA4bxkF5
+tkOec4x3QhO4iBoy+873xJc/Jq4PY0XCw/nsl4Qy1St8pGsiGqAYLqv/6Q+LsikiCZwEvwrATU5S
+4xrP0GCNS0mwYySMARk5YwETOvBnDGTjGldUwgeKkWrUqADt1haHCxEReDccFRp654cDsmB9aKjA
+IXn4E0LG0IdoGOIL/9iJJngSEsuogBJHF0ZQ4m9J6xClFMFoFRVIxJNMMCUo9oc5/jmAi7Wkoiyz
+yEn3Hep+tWpapJamxz36LXN4DKDl2ATCE6SRCMBcCDODZkwhsOiZH0zmCP3YS4ZgRwKV2+Lu+OYv
+3E0yd2qbWRwYmU5YMqF9llwkOEEBxUkKMZ6so+QQNPm8bkIqDofQFFdGGc1S2lIPT1Sl+VhJqOf4
+AZ4FvRoiyanFMNoS/5envCgtT+nPY/2SlBkSZliIGbA7NtCNPApFH/F4M6R9NKIgq6YATYqGa4ow
+jjKVmxjFtJcXHeJuerClIan4HU7cjZ0LDds6OcDTaSZVn7d06CrLmcrxpROqF+ooSB+Wx2V29Zg4
+RWYEB9ivNCaspWfswMcO8Ux9NbOl22Rpx1CqVY/2q6ki7SHzfpi2Gx41TGZTqjzV+RAOtBWwwZto
+JhUb0q/+TrCNhew+65pSjkZnVUD1IgetWtUoPvULj8KkRD0rKw5sEBCXtVhn1xc/fDaUs4xTrTgp
+C8HNfgwQJmNsTDmGxwnadZiI7ezybPbS28aOl4OkIROTW9tSUnaF7v95UU9I+rDhSvaxiowsicKT
+2etOSa0d+gpdOJFbqCbPqd7b62L7GodFaTWHq+CN6+KQgJd8Zy8JnUBR/7mb0hVyAQtIVFYzAF9Q
+8AaSAGhWdIpyKAUHFpXr8FQvC9yx+TqkKHRVpuFC6LStUmOHjLoRhqV0uhu19ribfe6NWPONs/yi
+AjPM7m7nRlEPr0JmBF4xRjT1GAvciDsrJFo3bbkKFrcYKcvJL2kNwd8hABkpUOQAkenZGhPD7iw4
+XgVE//i+fACAe9qLLG/HmtcNOzZhFV3NlrNnki9bYHgLuwCFzUwBUEBGqxv8rwbEtI63xPivrsXb
+BY7oDglnIM8xxB6WOoEFCqIVIMzGyECjaQuXHHahA415jKOJOlWYOkDRAribgRLgSGlZWshPLJeP
+UrOKAzAAnmuldFcGAQZNlLoTMLmBezahAQO4cybMcudIfu3eY62k1hxRgUZqvYBby1gI5SDEVirh
+gWXrgADODoZ4eQEAasv62+CWwX7DTe5ym7sDvj23utetbkCz+93wpq1WarBmdkcAADs=
+
+------=_NextPart_000_0000_01C9C2AA.66E6A430
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: http://www.sonicspot.com/phpadsnew/adview.php?what=<top>,_[wavefiles],_728x90,<top>,_(wavefiles),_728x90,<top>,_(fileformatspecs),_728x90,<top>,_(fileformats),_728x90,<top>,_(guide),_728x90,<top>,_(all),_728x90|<top>,_728x90|728x90&n=a14ed9fe
+
+R0lGODlhAQABAIAAAAQCBAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==
+
+------=_NextPart_000_0000_01C9C2AA.66E6A430
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: http://www.sonicspot.com/phpadsnew/adview.php?what=<bottom>,_[wavefiles],_728x90,<bottom>,_(wavefiles),_728x90,<bottom>,_(fileformatspecs),_728x90,<bottom>,_(fileformats),_728x90,<bottom>,_(guide),_728x90,<bottom>,_(all),_728x90|<bottom>,_728x90|728x90&n=a14ed9fe
+
+R0lGODlhAQABAIAAAAQCBAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==
+
+------=_NextPart_000_0000_01C9C2AA.66E6A430
+Content-Type: text/css;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.sonicspot.com/css/main/styles.css
+
+BODY {
+	PADDING-BOTTOM: 0px; BACKGROUND-COLOR: #000000; MARGIN: 8px; =
+PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-FAMILY: arial, helvetica, =
+verdana, sans-serif; COLOR: #000000; FONT-SIZE: 12px; PADDING-TOP: 0px
+}
+.Header {
+	WIDTH: 100%
+}
+.Header .Nav .TL {
+	BACKGROUND: url(outside-tl.gif) #003366 no-repeat left top
+}
+.Header .Nav .BR {
+	PADDING-BOTTOM: 4px; PADDING-LEFT: 4px; PADDING-RIGHT: 4px; =
+PADDING-TOP: 4px
+}
+.Header .Nav .Layout {
+	TEXT-ALIGN: center; WIDTH: 100%
+}
+.Header .Nav .Cell {
+	WHITE-SPACE: nowrap; COLOR: #e6e6e6; FONT-SIZE: 11px; FONT-WEIGHT: bold
+}
+.Header .Nav .Cell A {
+	COLOR: #e6e6e6; TEXT-DECORATION: none
+}
+.Header .Nav .Cell A:link {
+	COLOR: #e6e6e6; TEXT-DECORATION: none
+}
+.Header .Nav .Cell A:hover {
+	COLOR: #e6e6e6; TEXT-DECORATION: none
+}
+.Header .Nav .Cell A:active {
+	COLOR: #e6e6e6; TEXT-DECORATION: none
+}
+.Header .Nav .Cell A:visited {
+	COLOR: #e6e6e6; TEXT-DECORATION: none
+}
+.Header .Box {
+	TEXT-ALIGN: center; MARGIN: 0px; WIDTH: 1px; WHITE-SPACE: nowrap
+}
+.Header .Box .TL {
+	BACKGROUND-COLOR: #003366
+}
+.Header .Box .TR {
+	BACKGROUND: url(outside-tr.gif) no-repeat right top
+}
+.Header .Box .BL {
+	BACKGROUND: url(outside-bl.gif) no-repeat left bottom
+}
+.Header .Box .BR {
+	PADDING-BOTTOM: 8px; PADDING-LEFT: 8px; PADDING-RIGHT: 8px; BACKGROUND: =
+url(outside-br.gif) no-repeat right bottom; PADDING-TOP: 8px
+}
+.Header .Logo {
+=09
+}
+.Header .Logo .TL {
+	BACKGROUND: url(logo-tl.gif) no-repeat left top
+}
+.Header .Logo .TR {
+	BACKGROUND: url(logo-tr.gif) no-repeat right top
+}
+.Header .Logo .BL {
+	BACKGROUND: url(logo-bl.gif) no-repeat left bottom
+}
+.Header .Logo .BR {
+	PADDING-BOTTOM: 8px; PADDING-LEFT: 8px; PADDING-RIGHT: 8px; =
+MARGIN-LEFT: 24px; PADDING-TOP: 8px
+}
+.TopButtonAd {
+=09
+}
+.TopLeaderBoardAd {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 8px
+}
+.BottomLeaderBoardAd {
+	TEXT-ALIGN: center; PADDING-TOP: 8px
+}
+.BigBoxAd {
+	PADDING-BOTTOM: 8px; PADDING-LEFT: 0px; PADDING-RIGHT: 8px; =
+PADDING-TOP: 8px
+}
+.ContentBoxAd {
+	PADDING-BOTTOM: 8px; PADDING-LEFT: 0px; PADDING-RIGHT: 8px; =
+PADDING-TOP: 8px
+}
+.ContentRightAd {
+=09
+}
+.Breadcrumbs {
+	COLOR: #e6e6e6; MARGIN-LEFT: 4px; FONT-SIZE: 12px
+}
+.Breadcrumbs A {
+	COLOR: #e6e6e6
+}
+.Breadcrumbs A:link {
+	COLOR: #e6e6e6
+}
+.Breadcrumbs A:hover {
+	COLOR: #e6e6e6
+}
+.Breadcrumbs A:active {
+	COLOR: #e6e6e6
+}
+.Breadcrumbs A:visited {
+	COLOR: #e6e6e6
+}
+.Body {
+	BACKGROUND-COLOR: #003366; COLOR: #e6e6e6; FONT-SIZE: 12px
+}
+.Body .TR {
+	BACKGROUND: url(outside-tr.gif) no-repeat right top
+}
+.Body .BL {
+	BACKGROUND: url(outside-bl.gif) no-repeat left bottom
+}
+.Body .BR {
+	PADDING-BOTTOM: 8px; PADDING-LEFT: 24px; PADDING-RIGHT: 16px; =
+BACKGROUND: url(outside-br.gif) no-repeat right bottom; PADDING-TOP: 8px
+}
+.Block {
+	MARGIN-TOP: 8px; COLOR: #000000; CLEAR: both; MARGIN-RIGHT: 8px
+}
+.Block P {
+	MARGIN: 0px
+}
+.BlockLeft {
+	MARGIN-TOP: 8px; FLOAT: left; COLOR: #000000; MARGIN-RIGHT: 8px
+}
+.BlockLeft P {
+	MARGIN: 0px
+}
+.BlockTransparent {
+	MARGIN-TOP: 8px; COLOR: #e6e6e6; CLEAR: both; MARGIN-RIGHT: 8px
+}
+.BlockSide {
+	MARGIN-TOP: 8px; WIDTH: 200px; COLOR: #000000; MARGIN-RIGHT: 8px
+}
+.BlockSide P {
+	MARGIN: 0px
+}
+.BlockTL {
+	BACKGROUND: url(inside-tl.gif) #999999 no-repeat left top
+}
+.BlockTR {
+	BACKGROUND: url(inside-tr.gif) no-repeat right top
+}
+.BlockTR H1 {
+	PADDING-BOTTOM: 4px; MARGIN: 0px; PADDING-LEFT: 4px; PADDING-RIGHT: =
+4px; COLOR: #333333; FONT-SIZE: 150%; FONT-WEIGHT: bold; PADDING-TOP: =
+4px
+}
+.BlockTR P {
+	MARGIN-TOP: 0px
+}
+.BlockTR A {
+	COLOR: #cc0000
+}
+.BlockTR A:link {
+	COLOR: #cc0000
+}
+.BlockTR A:hover {
+	COLOR: #cc0000
+}
+.BlockTR A:active {
+	COLOR: #cc0000
+}
+.BlockTR A:visited {
+	COLOR: #cc0000
+}
+.BlockBL {
+	BACKGROUND: url(inside-bl.gif) #e6e6e6 no-repeat left bottom
+}
+.BlockBR {
+	BACKGROUND: url(inside-br.gif) no-repeat right bottom
+}
+.TabSet {
+	MARGIN-TOP: 8px; WHITE-SPACE: nowrap; COLOR: #000000; FONT-SIZE: 150%
+}
+.TabSet A {
+	COLOR: #cc0000; TEXT-DECORATION: none
+}
+.TabSet A:link {
+	COLOR: #cc0000; TEXT-DECORATION: none
+}
+.TabSet A:hover {
+	COLOR: #cc0000; TEXT-DECORATION: none
+}
+.TabSet A:active {
+	COLOR: #cc0000; TEXT-DECORATION: none
+}
+.TabSet A:visited {
+	COLOR: #cc0000; TEXT-DECORATION: none
+}
+.TabOpen {
+	BORDER-BOTTOM: #003366 1px solid; BACKGROUND: url(inside-tl.gif) =
+#e6e6e6 no-repeat left top; FLOAT: left; BORDER-RIGHT: #003366 1px solid
+}
+.TabOpenActive {
+	BORDER-BOTTOM: #e6e6e6 1px solid; BACKGROUND: url(inside-tl.gif) =
+#e6e6e6 no-repeat left top; FLOAT: left; BORDER-RIGHT: #003366 1px solid
+}
+.TabClose {
+	PADDING-BOTTOM: 4px; PADDING-LEFT: 4px; PADDING-RIGHT: 4px; BACKGROUND: =
+url(inside-tr.gif) no-repeat right top; FLOAT: left; PADDING-TOP: 4px
+}
+.TabBlock {
+	COLOR: #000000; CLEAR: both; MARGIN-RIGHT: 8px
+}
+.TabBlock P {
+	MARGIN: 0px
+}
+.TabBlockTL {
+	BACKGROUND-COLOR: #e6e6e6
+}
+.TabBlockTR {
+	BACKGROUND: url(inside-tr.gif) no-repeat right top
+}
+.TabBlockBL {
+	BACKGROUND: url(inside-bl.gif) no-repeat left bottom
+}
+.TabBlockBR {
+	BACKGROUND: url(inside-br.gif) no-repeat right bottom
+}
+.Content {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 8px; PADDING-RIGHT: 8px; =
+PADDING-TOP: 4px
+}
+.Content H1 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: =
+0px; FONT-SIZE: 150%; FONT-WEIGHT: bold; PADDING-TOP: 4px
+}
+.Content H2 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: =
+0px; FONT-SIZE: 135%; FONT-WEIGHT: bold; PADDING-TOP: 4px
+}
+.Content H3 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: =
+0px; FONT-SIZE: 120%; FONT-WEIGHT: bold; PADDING-TOP: 4px
+}
+.Content H4 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: =
+0px; FONT-SIZE: 110%; FONT-WEIGHT: bold; PADDING-TOP: 4px
+}
+.Content P {
+	PADDING-BOTTOM: 6px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; =
+PADDING-TOP: 2px
+}
+.Content A {
+	COLOR: #cc0000
+}
+.Content A:link {
+	COLOR: #cc0000
+}
+.Content A:hover {
+	COLOR: #cc0000
+}
+.Content A:active {
+	COLOR: #cc0000
+}
+.Content A:visited {
+	COLOR: #cc0000
+}
+.Footer {
+	TEXT-ALIGN: center; MARGIN-TOP: 8px; FONT-SIZE: 11px
+}
+.Footer P {
+	TEXT-ALIGN: center; MARGIN: 0px; FONT-SIZE: 11px
+}
+.Footer A {
+	COLOR: #e6e6e6
+}
+.Footer A:link {
+	COLOR: #e6e6e6
+}
+.Footer A:hover {
+	COLOR: #e6e6e6
+}
+.Footer A:active {
+	COLOR: #e6e6e6
+}
+.Footer A:visited {
+	COLOR: #e6e6e6
+}
+.Date {
+	FONT-WEIGHT: bold; PADDING-TOP: 8px
+}
+.Item {
+	PADDING-TOP: 6px
+}
+.ItemTitle {
+	FONT-WEIGHT: bold
+}
+.ItemSummary {
+	FONT-SIZE: 80%
+}
+.New {
+	COLOR: #008800; TEXT-DECORATION: none
+}
+.New A {
+	COLOR: #008800; TEXT-DECORATION: none
+}
+.New A:link {
+	COLOR: #008800; TEXT-DECORATION: none
+}
+.New A:hover {
+	COLOR: #008800; TEXT-DECORATION: none
+}
+.New A:active {
+	COLOR: #008800; TEXT-DECORATION: none
+}
+.New A:visited {
+	COLOR: #008800; TEXT-DECORATION: none
+}
+.Update {
+	COLOR: #000088; TEXT-DECORATION: none
+}
+.Update A {
+	COLOR: #000088; TEXT-DECORATION: none
+}
+.Update A:link {
+	COLOR: #000088; TEXT-DECORATION: none
+}
+.Update A:hover {
+	COLOR: #000088; TEXT-DECORATION: none
+}
+.Update A:active {
+	COLOR: #000088; TEXT-DECORATION: none
+}
+.Update A:visited {
+	COLOR: #000088; TEXT-DECORATION: none
+}
+.Review {
+	COLOR: #008800; TEXT-DECORATION: none
+}
+.Review A {
+	COLOR: #008800; TEXT-DECORATION: none
+}
+.Review A:link {
+	COLOR: #008800; TEXT-DECORATION: none
+}
+.Review A:hover {
+	COLOR: #008800; TEXT-DECORATION: none
+}
+.Review A:active {
+	COLOR: #008800; TEXT-DECORATION: none
+}
+.Review A:visited {
+	COLOR: #008800; TEXT-DECORATION: none
+}
+.News {
+	COLOR: #880088; TEXT-DECORATION: none
+}
+.News A {
+	COLOR: #880088; TEXT-DECORATION: none
+}
+.News A:link {
+	COLOR: #880088; TEXT-DECORATION: none
+}
+.News A:hover {
+	COLOR: #880088; TEXT-DECORATION: none
+}
+.News A:active {
+	COLOR: #880088; TEXT-DECORATION: none
+}
+.News A:visited {
+	COLOR: #880088; TEXT-DECORATION: none
+}
+.LinkMore {
+	TEXT-ALIGN: right; MARGIN: 8px 0px
+}
+.Screenshot {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 4px; PADDING-LEFT: 4px; =
+PADDING-RIGHT: 4px; PADDING-TOP: 4px
+}
+.Layout {
+	WIDTH: 100%
+}
+.Layout TD {
+	VERTICAL-ALIGN: top
+}
+.CategoryTable {
+	WIDTH: 100%
+}
+.CategoryTable TD {
+	PADDING-BOTTOM: 4px; PADDING-LEFT: 4px; PADDING-RIGHT: 4px; =
+VERTICAL-ALIGN: top; PADDING-TOP: 4px
+}
+.CategoryTable H1 {
+	PADDING-BOTTOM: 2px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: =
+6px; FONT-SIZE: 125%; PADDING-TOP: 0px
+}
+.CategoryTable UL {
+	PADDING-BOTTOM: 10px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: =
+4px; PADDING-TOP: 0px
+}
+.CategoryTable UL LI {
+	PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; MARGIN: 0px; PADDING-LEFT: =
+0px; PADDING-RIGHT: 0px; FONT-SIZE: 85%; PADDING-TOP: 0px
+}
+.SoftwareTable {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 6px; WIDTH: 100%; =
+PADDING-RIGHT: 6px; PADDING-TOP: 10px
+}
+.SoftwareTable TH {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 3px; MARGIN: 0px; PADDING-LEFT: 3px; =
+WIDTH: auto; PADDING-RIGHT: 3px; FONT-WEIGHT: bold; PADDING-TOP: 3px
+}
+.SoftwareTable TD {
+	BORDER-BOTTOM: #e6e6e6 1px solid; BORDER-LEFT: #e6e6e6 1px solid; =
+PADDING-BOTTOM: 3px; BACKGROUND-COLOR: #c0c0c0; PADDING-LEFT: 3px; =
+WIDTH: auto; PADDING-RIGHT: 3px; PADDING-TOP: 3px
+}
+.SoftwareTable TD A {
+	COLOR: #cc0000
+}
+.SoftwareTable TD A:link {
+	COLOR: #cc0000
+}
+.SoftwareTable TD A:hover {
+	COLOR: #cc0000
+}
+.SoftwareTable TD A:active {
+	COLOR: #cc0000
+}
+.SoftwareTable TD A:visited {
+	COLOR: #cc0000
+}
+.IEFix {
+	FONT-SIZE: 0px
+}
+
+------=_NextPart_000_0000_01C9C2AA.66E6A430
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.sonicspot.com/phpadsnew/adx.js
+
+function phpads_deliverActiveX(content)=0A=
+{=0A=
+	document.write(content);	=0A=
+}
+------=_NextPart_000_0000_01C9C2AA.66E6A430
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://1382.hittail.com/mlt.js
+
+if(!(htr('hittail_ok'))){htc=3Ddocument.referrer;htz=3Dhtl(document.locat=
+ion.href);if(htz!=3Dhtl(htc)&&(htc!=3D'')){if(htw(htc)){kw=3Dhtq(htc);htA=
+dt=3DhtAdTk(document.location.href);document.write('<img =
+src=3D"http://tracking.hittail.com/mlt.png?ref=3D'+escape(htc)+'&kw=3D'+k=
+w+'&eng=3D'+htm(htc)+'&p=3D'+htF(htc)+'&n=3D'+htn(kw)+'&adt=3D'+htAdt+'" =
+width=3D"1" =
+height=3D"1"/>');}}hty('hittail_ok','1','','/',document.domain,'');}funct=
+ion htw(hte){var htd=3Dtrue;var htj=3Dnew =
+Array("http://private.","http://internal.","http://intranet.","login=3D",=
+"/login","login.","logon=3D","/logon","logon.","/signin","signin=3D","sig=
+nin.","signon","/admin/","mail.","/mail/","/email/","webmail","mailbox","=
+https://","cache:","http://www.blogger.com","http://localhost","http://cl=
+ient.","http://docs.","http://timebase.","http://www2.blogger.","http://w=
+ww.typepad.com/t/app/","http://www.typepad.com/t/comments","http://blocke=
+dReferrer");for(i=3D0;i<htj.length;i++){if(hte.search(htj[i])> =
+-1){htd=3Dfalse;return htd;}}var =
+htE=3D/https?:\/\/(www\.|\d+\.)?hittail\.com/;var =
+hto=3D/https?:\/\/(www\.|\d+\.)?mylongtail\.com/;if(hte.search(htE)> =
+-1||hte.search(hto)> -1){htd=3Dfalse;}return htd;};function =
+htk(hta){return unescape(hta.replace(/\+/g," "));};function htm(url){var =
+htH=3D/(http:\/\/)([^\/]*?)(\/)/;htH.test(url);hti=3DRegExp.$2;return =
+hti;};function htq(url){var =
+htG=3D/(\?|&|&amp;|;){1}(q|p|query|t|w|search|as_q|wd){1}=3D(.[^&=3D]*)=3D=
+?/i;htG.test(url);kw=3Dhtk(RegExp.$3);if(kw.indexOf('cache:')>=3D0||kw.in=
+dexOf('http://')>=3D0||kw.indexOf('invocationType')>=3D0|| =
+!isNaN(kw)){kw=3D'';}else{kw=3DhtD(kw);}return kw;};function =
+htD(hta){hta=3Dhta.replace(/[^\w #\.\-^\u00c0-\u00ff]/g,'');return =
+hta;};function =
+htF(url){p=3D0;htI=3D/\.google\./;if(htI.test(url)){htJ=3D/google(.*?)(st=
+art=3D)([0-9]+)/;htJ.test(url);p=3DRegExp.$3;if(p!=3D''){p=3Dp/10;}else{p=
+=3D1;}}if(p=3D=3D0||p=3D=3D''){hts=3D/\.yahoo\./;if(hts.test(url)){htt=3D=
+/yahoo(.*?)b=3D([0-9]+)/;htt.test(url);p=3DRegExp.$2;if(p!=3D''){p=3D(p-1=
+)/10+1;}else{p=3D1;}}}if(p=3D=3D0||p=3D=3D''){htg=3D/msn|live\.com/;if(ht=
+g.test(url)){htp=3D/msn|live\.com(.*?)(\?|&)first=3D([0-9]+)/;htp.test(ur=
+l);p=3DRegExp.$3;if(p!=3D''){p=3D(p-1)/10+1;}else{p=3D1;}}}if(p=3D=3D0||p=
+=3D=3D''){htg=3D/ask\.com/;if(htg.test(url)){htB=3D/ask(.*?)(\?|&)page=3D=
+([0-9]+)/;htB.test(url);p=3DRegExp.$3;if(p!=3D''){p=3D(p-1)/10;}else{p=3D=
+1;}}}return p;};function htn(hta){hta=3Dhta.replace(/^\s+|\s+$/g,'');var =
+htv=3Dhta.split(/\s/);w=3Dhtv.length;return w;};function =
+hty(name,value,expires,htf,domain,hth){var =
+htx=3Dname+"=3D"+escape(value)+((htf)?"; htf=3D"+htf:"")+((domain)?"; =
+domain=3D"+domain:"")+((hth)?"; =
+hth":"");document.cookie=3Dhtx;};function htr(name){var =
+dc=3Ddocument.cookie;var prefix=3Dname+"=3D";var htb=3Ddc.indexOf("; =
+"+prefix);if(htb=3D=3D -1){htb=3Ddc.indexOf(prefix);if(htb!=3D0)return =
+null;}else htb+=3D2;var =
+end=3Ddocument.cookie.indexOf(";",htb);if(end=3D=3D =
+-1)end=3Ddc.length;return =
+unescape(dc.substring(htb+prefix.length,end));};function htl(url){var =
+htb,end;htb=3Durl.indexOf('//')+2;if(url.indexOf('/',8)){end=3Durl.indexO=
+f('/',8);}else{end=3Durl.length}return url.substring(htb,end);};function =
+htAdTk(url)
+{if ( (url.indexOf('gclid') > 0) || (url.indexOf('ysmkey') > 0) || =
+(url.indexOf('OVRAW') > 0) || (url.indexOf('OVKEY') > 0) ){ad =3D =
+1;}else{ad =3D 0;}return ad;}
+
+------=_NextPart_000_0000_01C9C2AA.66E6A430
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.google-analytics.com/urchin.js
+
+//-- Google Analytics Urchin Module=0A=
+//-- Copyright 2007 Google, All Rights Reserved.=0A=
+=0A=
+//-- Urchin On Demand Settings ONLY=0A=
+var _uacct=3D"";			// set up the Urchin Account=0A=
+var _userv=3D1;			// service mode (0=3Dlocal,1=3Dremote,2=3Dboth)=0A=
+=0A=
+//-- UTM User Settings=0A=
+var _ufsc=3D1;			// set client info flag (1=3Don|0=3Doff)=0A=
+var _udn=3D"auto";		// (auto|none|domain) set the domain name for cookies=0A=
+var _uhash=3D"on";		// (on|off) unique domain hash for cookies=0A=
+var _utimeout=3D"1800";   	// set the inactive session timeout in seconds=0A=
+var _ugifpath=3D"/__utm.gif";	// set the web path to the __utm.gif file=0A=
+var _utsp=3D"|";			// transaction field separator=0A=
+var _uflash=3D1;			// set flash version detect option (1=3Don|0=3Doff)=0A=
+var _utitle=3D1;			// set the document title detect option =
+(1=3Don|0=3Doff)=0A=
+var _ulink=3D0;			// enable linker functionality (1=3Don|0=3Doff)=0A=
+var _uanchor=3D0;			// enable use of anchors for campaign =
+(1=3Don|0=3Doff)=0A=
+var _utcp=3D"/";			// the cookie path for tracking=0A=
+var _usample=3D100;		// The sampling % of visitors to track (1-100).=0A=
+=0A=
+//-- UTM Campaign Tracking Settings=0A=
+var _uctm=3D1;			// set campaign tracking module (1=3Don|0=3Doff)=0A=
+var _ucto=3D"15768000";		// set timeout in seconds (6 month default)=0A=
+var _uccn=3D"utm_campaign";	// name=0A=
+var _ucmd=3D"utm_medium";		// medium (cpc|cpm|link|email|organic)=0A=
+var _ucsr=3D"utm_source";		// source=0A=
+var _uctr=3D"utm_term";		// term/keyword=0A=
+var _ucct=3D"utm_content";	// content=0A=
+var _ucid=3D"utm_id";		// id number=0A=
+var _ucno=3D"utm_nooverride";	// don't override=0A=
+=0A=
+//-- Auto/Organic Sources and Keywords=0A=
+var _uOsr=3Dnew Array();=0A=
+var _uOkw=3Dnew Array();=0A=
+_uOsr[0]=3D"google";	_uOkw[0]=3D"q";=0A=
+_uOsr[1]=3D"yahoo";	_uOkw[1]=3D"p";=0A=
+_uOsr[2]=3D"msn";		_uOkw[2]=3D"q";=0A=
+_uOsr[3]=3D"aol";		_uOkw[3]=3D"query";=0A=
+_uOsr[4]=3D"aol";		_uOkw[4]=3D"encquery";=0A=
+_uOsr[5]=3D"lycos";	_uOkw[5]=3D"query";=0A=
+_uOsr[6]=3D"ask";		_uOkw[6]=3D"q";=0A=
+_uOsr[7]=3D"altavista";	_uOkw[7]=3D"q";=0A=
+_uOsr[8]=3D"netscape";	_uOkw[8]=3D"query";=0A=
+_uOsr[9]=3D"cnn";	_uOkw[9]=3D"query";=0A=
+_uOsr[10]=3D"looksmart";	_uOkw[10]=3D"qt";=0A=
+_uOsr[11]=3D"about";	_uOkw[11]=3D"terms";=0A=
+_uOsr[12]=3D"mamma";	_uOkw[12]=3D"query";=0A=
+_uOsr[13]=3D"alltheweb";	_uOkw[13]=3D"q";=0A=
+_uOsr[14]=3D"gigablast";	_uOkw[14]=3D"q";=0A=
+_uOsr[15]=3D"voila";	_uOkw[15]=3D"rdata";=0A=
+_uOsr[16]=3D"virgilio";	_uOkw[16]=3D"qs";=0A=
+_uOsr[17]=3D"live";	_uOkw[17]=3D"q";=0A=
+_uOsr[18]=3D"baidu";	_uOkw[18]=3D"wd";=0A=
+_uOsr[19]=3D"alice";	_uOkw[19]=3D"qs";=0A=
+_uOsr[20]=3D"yandex";	_uOkw[20]=3D"text";=0A=
+_uOsr[21]=3D"najdi";	_uOkw[21]=3D"q";=0A=
+_uOsr[22]=3D"aol";	_uOkw[22]=3D"q";=0A=
+_uOsr[23]=3D"club-internet"; _uOkw[23]=3D"query";=0A=
+_uOsr[24]=3D"mama";	_uOkw[24]=3D"query";=0A=
+_uOsr[25]=3D"seznam";	_uOkw[25]=3D"q";=0A=
+_uOsr[26]=3D"search";	_uOkw[26]=3D"q";=0A=
+_uOsr[27]=3D"wp";	_uOkw[27]=3D"szukaj";=0A=
+_uOsr[28]=3D"onet";	_uOkw[28]=3D"qt";=0A=
+_uOsr[29]=3D"netsprint";	_uOkw[29]=3D"q";=0A=
+_uOsr[30]=3D"google.interia";	_uOkw[30]=3D"q";=0A=
+_uOsr[31]=3D"szukacz";	_uOkw[31]=3D"q";=0A=
+_uOsr[32]=3D"yam";	_uOkw[32]=3D"k";=0A=
+_uOsr[33]=3D"pchome";	_uOkw[33]=3D"q";=0A=
+_uOsr[34]=3D"kvasir";	_uOkw[34]=3D"searchExpr";=0A=
+_uOsr[35]=3D"sesam";	_uOkw[35]=3D"q";=0A=
+_uOsr[36]=3D"ozu"; _uOkw[36]=3D"q";=0A=
+_uOsr[37]=3D"terra"; _uOkw[37]=3D"query";=0A=
+_uOsr[38]=3D"nostrum"; _uOkw[38]=3D"query";=0A=
+_uOsr[39]=3D"mynet"; _uOkw[39]=3D"q";=0A=
+_uOsr[40]=3D"ekolay"; _uOkw[40]=3D"q";=0A=
+_uOsr[41]=3D"search.ilse"; _uOkw[41]=3D"search_for";=0A=
+=0A=
+//-- Auto/Organic Keywords to Ignore=0A=
+var _uOno=3Dnew Array();=0A=
+//_uOno[0]=3D"urchin";=0A=
+//_uOno[1]=3D"urchin.com";=0A=
+//_uOno[2]=3D"www.urchin.com";=0A=
+=0A=
+//-- Referral domains to Ignore=0A=
+var _uRno=3Dnew Array();=0A=
+//_uRno[0]=3D".urchin.com";=0A=
+=0A=
+//-- **** Don't modify below this point ***=0A=
+var =
+_uff,_udh,_udt,_ubl=3D0,_udo=3D"",_uu,_ufns=3D0,_uns=3D0,_ur=3D"-",_ufno=3D=
+0,_ust=3D0,_ubd=3Ddocument,_udl=3D_ubd.location,_udlh=3D"",_uwv=3D"1.3";=0A=
+var _ugifpath2=3D"http://www.google-analytics.com/__utm.gif";=0A=
+if (_udl.hash) _udlh=3D_udl.href.substring(_udl.href.indexOf('#'));=0A=
+if (_udl.protocol=3D=3D"https:") =
+_ugifpath2=3D"https://ssl.google-analytics.com/__utm.gif";=0A=
+if (!_utcp || _utcp=3D=3D"") _utcp=3D"/";=0A=
+function urchinTracker(page) {=0A=
+ if (_udl.protocol=3D=3D"file:") return;=0A=
+ if (_uff && (!page || page=3D=3D"")) return;=0A=
+ var a,b,c,xx,v,z,k,x=3D"",s=3D"",f=3D0,nv=3D0;=0A=
+ var nx=3D" expires=3D"+_uNx()+";";=0A=
+ var dc=3D_ubd.cookie;=0A=
+ _udh=3D_uDomain();=0A=
+ if (!_uVG()) return;=0A=
+ _uu=3DMath.round(Math.random()*2147483647);=0A=
+ _udt=3Dnew Date();=0A=
+ _ust=3DMath.round(_udt.getTime()/1000);=0A=
+ a=3Ddc.indexOf("__utma=3D"+_udh+".");=0A=
+ b=3Ddc.indexOf("__utmb=3D"+_udh);=0A=
+ c=3Ddc.indexOf("__utmc=3D"+_udh);=0A=
+ if (_udn && _udn!=3D"") { _udo=3D" domain=3D"+_udn+";"; }=0A=
+ if (_utimeout && _utimeout!=3D"") {=0A=
+  x=3Dnew Date(_udt.getTime()+(_utimeout*1000));=0A=
+  x=3D" expires=3D"+x.toGMTString()+";";=0A=
+ }=0A=
+ if (_ulink) {=0A=
+  if (_uanchor && _udlh && _udlh!=3D"") s=3D_udlh+"&";=0A=
+  s+=3D_udl.search;=0A=
+  if(s && s!=3D"" && s.indexOf("__utma=3D")>=3D0) {=0A=
+   if (!(_uIN(a=3D_uGC(s,"__utma=3D","&")))) a=3D"-";=0A=
+   if (!(_uIN(b=3D_uGC(s,"__utmb=3D","&")))) b=3D"-";=0A=
+   if (!(_uIN(c=3D_uGC(s,"__utmc=3D","&")))) c=3D"-";=0A=
+   v=3D_uGC(s,"__utmv=3D","&");=0A=
+   z=3D_uGC(s,"__utmz=3D","&");=0A=
+   k=3D_uGC(s,"__utmk=3D","&");=0A=
+   xx=3D_uGC(s,"__utmx=3D","&");=0A=
+   if ((k*1) !=3D ((_uHash(a+b+c+xx+z+v)*1)+(_udh*1))) =
+{_ubl=3D1;a=3D"-";b=3D"-";c=3D"-";xx=3D"-";z=3D"-";v=3D"-";}=0A=
+   if (a!=3D"-" && b!=3D"-" && c!=3D"-") f=3D1;=0A=
+   else if(a!=3D"-") f=3D2;=0A=
+  }=0A=
+ }=0A=
+ if(f=3D=3D1) {=0A=
+  _ubd.cookie=3D"__utma=3D"+a+"; path=3D"+_utcp+";"+nx+_udo;=0A=
+  _ubd.cookie=3D"__utmb=3D"+b+"; path=3D"+_utcp+";"+x+_udo;=0A=
+  _ubd.cookie=3D"__utmc=3D"+c+"; path=3D"+_utcp+";"+_udo;=0A=
+ } else if (f=3D=3D2) {=0A=
+  a=3D_uFixA(s,"&",_ust);=0A=
+  _ubd.cookie=3D"__utma=3D"+a+"; path=3D"+_utcp+";"+nx+_udo;=0A=
+  _ubd.cookie=3D"__utmb=3D"+_udh+"; path=3D"+_utcp+";"+x+_udo;=0A=
+  _ubd.cookie=3D"__utmc=3D"+_udh+"; path=3D"+_utcp+";"+_udo;=0A=
+  _ufns=3D1;=0A=
+ } else if (a>=3D0 && b>=3D0 && c>=3D0) {=0A=
+   b =3D _uGC(dc,"__utmb=3D"+_udh,";");=0A=
+   b =3D ("-" =3D=3D b) ? _udh : b;  =0A=
+  _ubd.cookie=3D"__utmb=3D"+b+"; path=3D"+_utcp+";"+x+_udo;=0A=
+ } else {=0A=
+  if (a>=3D0) a=3D_uFixA(_ubd.cookie,";",_ust);=0A=
+  else {=0A=
+   a=3D_udh+"."+_uu+"."+_ust+"."+_ust+"."+_ust+".1";=0A=
+   nv=3D1;=0A=
+  }=0A=
+  _ubd.cookie=3D"__utma=3D"+a+"; path=3D"+_utcp+";"+nx+_udo;=0A=
+  _ubd.cookie=3D"__utmb=3D"+_udh+"; path=3D"+_utcp+";"+x+_udo;=0A=
+  _ubd.cookie=3D"__utmc=3D"+_udh+"; path=3D"+_utcp+";"+_udo;=0A=
+  _ufns=3D1;=0A=
+ }=0A=
+ if (_ulink && xx && xx!=3D"" && xx!=3D"-") {=0A=
+   xx=3D_uUES(xx);=0A=
+   if (xx.indexOf(";")=3D=3D-1) _ubd.cookie=3D"__utmx=3D"+xx+"; =
+path=3D"+_utcp+";"+nx+_udo;=0A=
+ }=0A=
+ if (_ulink && v && v!=3D"" && v!=3D"-") {=0A=
+  v=3D_uUES(v);=0A=
+  if (v.indexOf(";")=3D=3D-1) _ubd.cookie=3D"__utmv=3D"+v+"; =
+path=3D"+_utcp+";"+nx+_udo;=0A=
+ }=0A=
+ var wc=3Dwindow;=0A=
+ var c=3D_ubd.cookie;=0A=
+ if(wc && wc.gaGlobal && wc.gaGlobal.dh=3D=3D_udh){=0A=
+  var g=3Dwc.gaGlobal;=0A=
+  var ua=3Dc.split("__utma=3D"+_udh+".")[1].split(";")[0].split(".");=0A=
+  if(g.sid)ua[3]=3Dg.sid;=0A=
+  if(nv>0){=0A=
+   ua[2]=3Dua[3];=0A=
+   if(g.vid){=0A=
+    var v=3Dg.vid.split(".");=0A=
+    ua[0]=3Dv[0];=0A=
+    ua[1]=3Dv[1];=0A=
+   }=0A=
+  }=0A=
+  _ubd.cookie=3D"__utma=3D"+_udh+"."+ua.join(".")+"; =
+path=3D"+_utcp+";"+nx+_udo;=0A=
+ }=0A=
+ _uInfo(page);=0A=
+ _ufns=3D0;=0A=
+ _ufno=3D0;=0A=
+ if (!page || page=3D=3D"") _uff=3D1;=0A=
+}=0A=
+function _uGH() {=0A=
+ var hid;=0A=
+ var wc=3Dwindow;=0A=
+ if (wc && wc.gaGlobal && wc.gaGlobal.hid) {=0A=
+  hid=3Dwc.gaGlobal.hid;=0A=
+ } else {=0A=
+  hid=3DMath.round(Math.random()*0x7fffffff);=0A=
+  if (!wc.gaGlobal) wc.gaGlobal=3D{};=0A=
+  wc.gaGlobal.hid=3Dhid;=0A=
+ }=0A=
+ return hid;=0A=
+}=0A=
+function _uInfo(page) {=0A=
+ var p,s=3D"",dm=3D"",pg=3D_udl.pathname+_udl.search;=0A=
+ if (page && page!=3D"") pg=3D_uES(page,1);=0A=
+ _ur=3D_ubd.referrer;=0A=
+ if (!_ur || _ur=3D=3D"") { _ur=3D"-"; }=0A=
+ else {=0A=
+  dm=3D_ubd.domain;=0A=
+  if(_utcp && _utcp!=3D"/") dm+=3D_utcp;=0A=
+  p=3D_ur.indexOf(dm);=0A=
+  if ((p>=3D0) && (p<=3D8)) { _ur=3D"0"; }=0A=
+  if (_ur.indexOf("[")=3D=3D0 && =
+_ur.lastIndexOf("]")=3D=3D(_ur.length-1)) { _ur=3D"-"; }=0A=
+ }=0A=
+ s+=3D"&utmn=3D"+_uu;=0A=
+ if (_ufsc) s+=3D_uBInfo();=0A=
+ if (_uctm) s+=3D_uCInfo();=0A=
+ if (_utitle && _ubd.title && _ubd.title!=3D"") =
+s+=3D"&utmdt=3D"+_uES(_ubd.title);=0A=
+ if (_udl.hostname && _udl.hostname!=3D"") =
+s+=3D"&utmhn=3D"+_uES(_udl.hostname);=0A=
+ if (_usample && _usample !=3D 100) s+=3D"&utmsp=3D"+_uES(_usample);=0A=
+ s+=3D"&utmhid=3D"+_uGH();=0A=
+ s+=3D"&utmr=3D"+_ur;=0A=
+ s+=3D"&utmp=3D"+pg;=0A=
+ if ((_userv=3D=3D0 || _userv=3D=3D2) && _uSP()) {=0A=
+  var i=3Dnew Image(1,1);=0A=
+  i.src=3D_ugifpath+"?"+"utmwv=3D"+_uwv+s;=0A=
+  i.onload=3Dfunction() { _uVoid(); }=0A=
+ }=0A=
+ if ((_userv=3D=3D1 || _userv=3D=3D2) && _uSP()) {=0A=
+  var i2=3Dnew Image(1,1);=0A=
+  =
+i2.src=3D_ugifpath2+"?"+"utmwv=3D"+_uwv+s+"&utmac=3D"+_uacct+"&utmcc=3D"+=
+_uGCS();=0A=
+  i2.onload=3Dfunction() { _uVoid(); }=0A=
+ }=0A=
+ return;=0A=
+}=0A=
+function _uVoid() { return; }=0A=
+function _uCInfo() {=0A=
+ if (!_ucto || _ucto=3D=3D"") { _ucto=3D"15768000"; }=0A=
+ if (!_uVG()) return;=0A=
+ var =
+c=3D"",t=3D"-",t2=3D"-",t3=3D"-",o=3D0,cs=3D0,cn=3D0,i=3D0,z=3D"-",s=3D""=
+;=0A=
+ if (_uanchor && _udlh && _udlh!=3D"") s=3D_udlh+"&";=0A=
+ s+=3D_udl.search;=0A=
+ var x=3Dnew Date(_udt.getTime()+(_ucto*1000));=0A=
+ var dc=3D_ubd.cookie;=0A=
+ x=3D" expires=3D"+x.toGMTString()+";";=0A=
+ if (_ulink && !_ubl) {=0A=
+  z=3D_uUES(_uGC(s,"__utmz=3D","&"));=0A=
+  if (z!=3D"-" && z.indexOf(";")=3D=3D-1) { =
+_ubd.cookie=3D"__utmz=3D"+z+"; path=3D"+_utcp+";"+x+_udo; return ""; }=0A=
+ }=0A=
+ z=3Ddc.indexOf("__utmz=3D"+_udh+".");=0A=
+ if (z>-1) { z=3D_uGC(dc,"__utmz=3D"+_udh+".",";"); }=0A=
+ else { z=3D"-"; }=0A=
+ t=3D_uGC(s,_ucid+"=3D","&");=0A=
+ t2=3D_uGC(s,_ucsr+"=3D","&");=0A=
+ t3=3D_uGC(s,"gclid=3D","&");=0A=
+ if ((t!=3D"-" && t!=3D"") || (t2!=3D"-" && t2!=3D"") || (t3!=3D"-" && =
+t3!=3D"")) {=0A=
+  if (t!=3D"-" && t!=3D"") c+=3D"utmcid=3D"+_uEC(t);=0A=
+  if (t2!=3D"-" && t2!=3D"") { if (c !=3D "") c+=3D"|"; =
+c+=3D"utmcsr=3D"+_uEC(t2); }=0A=
+  if (t3!=3D"-" && t3!=3D"") { if (c !=3D "") c+=3D"|"; =
+c+=3D"utmgclid=3D"+_uEC(t3); }=0A=
+  t=3D_uGC(s,_uccn+"=3D","&");=0A=
+  if (t!=3D"-" && t!=3D"") c+=3D"|utmccn=3D"+_uEC(t);=0A=
+  else c+=3D"|utmccn=3D(not+set)";=0A=
+  t=3D_uGC(s,_ucmd+"=3D","&");=0A=
+  if (t!=3D"-" && t!=3D"") c+=3D"|utmcmd=3D"+_uEC(t);=0A=
+  else  c+=3D"|utmcmd=3D(not+set)";=0A=
+  t=3D_uGC(s,_uctr+"=3D","&");=0A=
+  if (t!=3D"-" && t!=3D"") c+=3D"|utmctr=3D"+_uEC(t);=0A=
+  else { t=3D_uOrg(1); if (t!=3D"-" && t!=3D"") =
+c+=3D"|utmctr=3D"+_uEC(t); }=0A=
+  t=3D_uGC(s,_ucct+"=3D","&");=0A=
+  if (t!=3D"-" && t!=3D"") c+=3D"|utmcct=3D"+_uEC(t);=0A=
+  t=3D_uGC(s,_ucno+"=3D","&");=0A=
+  if (t=3D=3D"1") o=3D1;=0A=
+  if (z!=3D"-" && o=3D=3D1) return "";=0A=
+ }=0A=
+ if (c=3D=3D"-" || c=3D=3D"") { c=3D_uOrg(); if (z!=3D"-" && =
+_ufno=3D=3D1)  return ""; }=0A=
+ if (c=3D=3D"-" || c=3D=3D"") { if (_ufns=3D=3D1)  c=3D_uRef(); if =
+(z!=3D"-" && _ufno=3D=3D1)  return ""; }=0A=
+ if (c=3D=3D"-" || c=3D=3D"") {=0A=
+  if (z=3D=3D"-" && _ufns=3D=3D1) { =
+c=3D"utmccn=3D(direct)|utmcsr=3D(direct)|utmcmd=3D(none)"; }=0A=
+  if (c=3D=3D"-" || c=3D=3D"") return "";=0A=
+ }=0A=
+ if (z!=3D"-") {=0A=
+  i=3Dz.indexOf(".");=0A=
+  if (i>-1) i=3Dz.indexOf(".",i+1);=0A=
+  if (i>-1) i=3Dz.indexOf(".",i+1);=0A=
+  if (i>-1) i=3Dz.indexOf(".",i+1);=0A=
+  t=3Dz.substring(i+1,z.length);=0A=
+  if (t.toLowerCase()=3D=3Dc.toLowerCase()) cs=3D1;=0A=
+  t=3Dz.substring(0,i);=0A=
+  if ((i=3Dt.lastIndexOf(".")) > -1) {=0A=
+   t=3Dt.substring(i+1,t.length);=0A=
+   cn=3D(t*1);=0A=
+  }=0A=
+ }=0A=
+ if (cs=3D=3D0 || _ufns=3D=3D1) {=0A=
+  t=3D_uGC(dc,"__utma=3D"+_udh+".",";");=0A=
+  if ((i=3Dt.lastIndexOf(".")) > 9) {=0A=
+   _uns=3Dt.substring(i+1,t.length);=0A=
+   _uns=3D(_uns*1);=0A=
+  }=0A=
+  cn++;=0A=
+  if (_uns=3D=3D0) _uns=3D1;=0A=
+  _ubd.cookie=3D"__utmz=3D"+_udh+"."+_ust+"."+_uns+"."+cn+"."+c+"; =
+path=3D"+_utcp+"; "+x+_udo;=0A=
+ }=0A=
+ if (cs=3D=3D0 || _ufns=3D=3D1) return "&utmcn=3D1";=0A=
+ else return "&utmcr=3D1";=0A=
+}=0A=
+function _uRef() {=0A=
+ if (_ur=3D=3D"0" || _ur=3D=3D"" || _ur=3D=3D"-") return "";=0A=
+ var i=3D0,h,k,n;=0A=
+ if ((i=3D_ur.indexOf("://"))<0 || _uGCse()) return "";=0A=
+ h=3D_ur.substring(i+3,_ur.length);=0A=
+ if (h.indexOf("/") > -1) {=0A=
+  k=3Dh.substring(h.indexOf("/"),h.length);=0A=
+  if (k.indexOf("?") > -1) k=3Dk.substring(0,k.indexOf("?"));=0A=
+  h=3Dh.substring(0,h.indexOf("/"));=0A=
+ }=0A=
+ h=3Dh.toLowerCase();=0A=
+ n=3Dh;=0A=
+ if ((i=3Dn.indexOf(":")) > -1) n=3Dn.substring(0,i);=0A=
+ for (var ii=3D0;ii<_uRno.length;ii++) {=0A=
+  if ((i=3Dn.indexOf(_uRno[ii].toLowerCase())) > -1 && =
+n.length=3D=3D(i+_uRno[ii].length)) { _ufno=3D1; break; }=0A=
+ }=0A=
+ if (h.indexOf("www.")=3D=3D0) h=3Dh.substring(4,h.length);=0A=
+ return =
+"utmccn=3D(referral)|utmcsr=3D"+_uEC(h)+"|"+"utmcct=3D"+_uEC(k)+"|utmcmd=3D=
+referral";=0A=
+}=0A=
+function _uOrg(t) {=0A=
+ if (_ur=3D=3D"0" || _ur=3D=3D"" || _ur=3D=3D"-") return "";=0A=
+ var i=3D0,h,k;=0A=
+ if ((i=3D_ur.indexOf("://"))<0 || _uGCse()) return "";=0A=
+ h=3D_ur.substring(i+3,_ur.length);=0A=
+ if (h.indexOf("/") > -1) {=0A=
+  h=3Dh.substring(0,h.indexOf("/"));=0A=
+ }=0A=
+ for (var ii=3D0;ii<_uOsr.length;ii++) {=0A=
+  if (h.toLowerCase().indexOf(_uOsr[ii].toLowerCase()) > -1) {=0A=
+   if ((i=3D_ur.indexOf("?"+_uOkw[ii]+"=3D")) > -1 || =
+(i=3D_ur.indexOf("&"+_uOkw[ii]+"=3D")) > -1) {=0A=
+    k=3D_ur.substring(i+_uOkw[ii].length+2,_ur.length);=0A=
+    if ((i=3Dk.indexOf("&")) > -1) k=3Dk.substring(0,i);=0A=
+    for (var yy=3D0;yy<_uOno.length;yy++) {=0A=
+     if (_uOno[yy].toLowerCase()=3D=3Dk.toLowerCase()) { _ufno=3D1; =
+break; }=0A=
+    }=0A=
+    if (t) return _uEC(k);=0A=
+    else return =
+"utmccn=3D(organic)|utmcsr=3D"+_uEC(_uOsr[ii])+"|"+"utmctr=3D"+_uEC(k)+"|=
+utmcmd=3Dorganic";=0A=
+   }=0A=
+  }=0A=
+ }=0A=
+ return "";=0A=
+}=0A=
+function _uGCse() {=0A=
+ var h,p;=0A=
+ h=3Dp=3D_ur.split("://")[1];=0A=
+ if(h.indexOf("/")>-1) {=0A=
+  h=3Dh.split("/")[0];=0A=
+  p=3Dp.substring(p.indexOf("/")+1,p.length);=0A=
+ }=0A=
+ if(p.indexOf("?")>-1) {=0A=
+  p=3Dp.split("?")[0];=0A=
+ }=0A=
+ if(h.toLowerCase().indexOf("google")>-1) {=0A=
+  if(_ur.indexOf("?q=3D")>-1 || _ur.indexOf("&q=3D")>-1) {=0A=
+   if (p.toLowerCase().indexOf("cse")>-1) {=0A=
+    return true;=0A=
+   }=0A=
+  }=0A=
+ }=0A=
+}=0A=
+function _uBInfo() {=0A=
+ var sr=3D"-",sc=3D"-",ul=3D"-",fl=3D"-",cs=3D"-",je=3D1;=0A=
+ var n=3Dnavigator;=0A=
+ if (self.screen) {=0A=
+  sr=3Dscreen.width+"x"+screen.height;=0A=
+  sc=3Dscreen.colorDepth+"-bit";=0A=
+ } else if (self.java) {=0A=
+  var j=3Djava.awt.Toolkit.getDefaultToolkit();=0A=
+  var s=3Dj.getScreenSize();=0A=
+  sr=3Ds.width+"x"+s.height;=0A=
+ }=0A=
+ if (n.language) { ul=3Dn.language.toLowerCase(); }=0A=
+ else if (n.browserLanguage) { ul=3Dn.browserLanguage.toLowerCase(); }=0A=
+ je=3Dn.javaEnabled()?1:0;=0A=
+ if (_uflash) fl=3D_uFlash();=0A=
+ if (_ubd.characterSet) cs=3D_uES(_ubd.characterSet);=0A=
+ else if (_ubd.charset) cs=3D_uES(_ubd.charset);=0A=
+ return =
+"&utmcs=3D"+cs+"&utmsr=3D"+sr+"&utmsc=3D"+sc+"&utmul=3D"+ul+"&utmje=3D"+j=
+e+"&utmfl=3D"+fl;=0A=
+}=0A=
+function __utmSetTrans() {=0A=
+ var e;=0A=
+ if (_ubd.getElementById) e=3D_ubd.getElementById("utmtrans");=0A=
+ else if (_ubd.utmform && _ubd.utmform.utmtrans) =
+e=3D_ubd.utmform.utmtrans;=0A=
+ if (!e) return;=0A=
+ var l=3De.value.split("UTM:");=0A=
+ var i,i2,c;=0A=
+ if (_userv=3D=3D0 || _userv=3D=3D2) i=3Dnew Array();=0A=
+ if (_userv=3D=3D1 || _userv=3D=3D2) { i2=3Dnew Array(); c=3D_uGCS(); }=0A=
+=0A=
+ for (var ii=3D0;ii<l.length;ii++) {=0A=
+  l[ii]=3D_uTrim(l[ii]);=0A=
+  if (l[ii].charAt(0)!=3D'T' && l[ii].charAt(0)!=3D'I') continue;=0A=
+  var r=3DMath.round(Math.random()*2147483647);=0A=
+  if (!_utsp || _utsp=3D=3D"") _utsp=3D"|";=0A=
+  var f=3Dl[ii].split(_utsp),s=3D"";=0A=
+  if (f[0].charAt(0)=3D=3D'T') {=0A=
+   s=3D"&utmt=3Dtran"+"&utmn=3D"+r;=0A=
+   f[1]=3D_uTrim(f[1]); if(f[1]&&f[1]!=3D"") =
+s+=3D"&utmtid=3D"+_uES(f[1]);=0A=
+   f[2]=3D_uTrim(f[2]); if(f[2]&&f[2]!=3D"") =
+s+=3D"&utmtst=3D"+_uES(f[2]);=0A=
+   f[3]=3D_uTrim(f[3]); if(f[3]&&f[3]!=3D"") =
+s+=3D"&utmtto=3D"+_uES(f[3]);=0A=
+   f[4]=3D_uTrim(f[4]); if(f[4]&&f[4]!=3D"") =
+s+=3D"&utmttx=3D"+_uES(f[4]);=0A=
+   f[5]=3D_uTrim(f[5]); if(f[5]&&f[5]!=3D"") =
+s+=3D"&utmtsp=3D"+_uES(f[5]);=0A=
+   f[6]=3D_uTrim(f[6]); if(f[6]&&f[6]!=3D"") =
+s+=3D"&utmtci=3D"+_uES(f[6]);=0A=
+   f[7]=3D_uTrim(f[7]); if(f[7]&&f[7]!=3D"") =
+s+=3D"&utmtrg=3D"+_uES(f[7]);=0A=
+   f[8]=3D_uTrim(f[8]); if(f[8]&&f[8]!=3D"") =
+s+=3D"&utmtco=3D"+_uES(f[8]);=0A=
+  } else {=0A=
+   s=3D"&utmt=3Ditem"+"&utmn=3D"+r;=0A=
+   f[1]=3D_uTrim(f[1]); if(f[1]&&f[1]!=3D"") =
+s+=3D"&utmtid=3D"+_uES(f[1]);=0A=
+   f[2]=3D_uTrim(f[2]); if(f[2]&&f[2]!=3D"") =
+s+=3D"&utmipc=3D"+_uES(f[2]);=0A=
+   f[3]=3D_uTrim(f[3]); if(f[3]&&f[3]!=3D"") =
+s+=3D"&utmipn=3D"+_uES(f[3]);=0A=
+   f[4]=3D_uTrim(f[4]); if(f[4]&&f[4]!=3D"") =
+s+=3D"&utmiva=3D"+_uES(f[4]);=0A=
+   f[5]=3D_uTrim(f[5]); if(f[5]&&f[5]!=3D"") =
+s+=3D"&utmipr=3D"+_uES(f[5]);=0A=
+   f[6]=3D_uTrim(f[6]); if(f[6]&&f[6]!=3D"") =
+s+=3D"&utmiqt=3D"+_uES(f[6]);=0A=
+  }=0A=
+  if (_udl.hostname && _udl.hostname!=3D"") =
+s+=3D"&utmhn=3D"+_uES(_udl.hostname);=0A=
+  if (_usample && _usample !=3D 100) s+=3D"&utmsp=3D"+_uES(_usample);=0A=
+=0A=
+  if ((_userv=3D=3D0 || _userv=3D=3D2) && _uSP()) {=0A=
+   i[ii]=3Dnew Image(1,1);=0A=
+   i[ii].src=3D_ugifpath+"?"+"utmwv=3D"+_uwv+s;=0A=
+   i[ii].onload=3Dfunction() { _uVoid(); }=0A=
+  }=0A=
+  if ((_userv=3D=3D1 || _userv=3D=3D2) && _uSP()) {=0A=
+   i2[ii]=3Dnew Image(1,1);=0A=
+   =
+i2[ii].src=3D_ugifpath2+"?"+"utmwv=3D"+_uwv+s+"&utmac=3D"+_uacct+"&utmcc=3D=
+"+c;=0A=
+   i2[ii].onload=3Dfunction() { _uVoid(); }=0A=
+  }=0A=
+ }=0A=
+ return;=0A=
+}=0A=
+function _uFlash() {=0A=
+ var f=3D"-",n=3Dnavigator;=0A=
+ if (n.plugins && n.plugins.length) {=0A=
+  for (var ii=3D0;ii<n.plugins.length;ii++) {=0A=
+   if (n.plugins[ii].name.indexOf('Shockwave Flash')!=3D-1) {=0A=
+    f=3Dn.plugins[ii].description.split('Shockwave Flash ')[1];=0A=
+    break;=0A=
+   }=0A=
+  }=0A=
+ } else {=0A=
+  var fl;=0A=
+  try {=0A=
+   fl =3D new ActiveXObject("ShockwaveFlash.ShockwaveFlash.7");=0A=
+   f =3D fl.GetVariable("$version");=0A=
+  } catch(e) {}=0A=
+  if (f =3D=3D "-") {=0A=
+   try {=0A=
+    fl =3D new ActiveXObject("ShockwaveFlash.ShockwaveFlash.6");=0A=
+    f =3D "WIN 6,0,21,0";=0A=
+    fl.AllowScriptAccess =3D "always";=0A=
+    f =3D fl.GetVariable("$version");=0A=
+   } catch(e) {}=0A=
+  }=0A=
+  if (f =3D=3D "-") {=0A=
+   try {=0A=
+    fl =3D new ActiveXObject("ShockwaveFlash.ShockwaveFlash");=0A=
+    f =3D fl.GetVariable("$version");=0A=
+   } catch(e) {}=0A=
+  }=0A=
+  if (f !=3D "-") {=0A=
+   f =3D f.split(" ")[1].split(",");=0A=
+   f =3D f[0] + "." + f[1] + " r" + f[2];=0A=
+  }=0A=
+ }=0A=
+ return f;=0A=
+}=0A=
+function __utmLinkerUrl(l,h) {=0A=
+ var p,k,a=3D"-",b=3D"-",c=3D"-",x=3D"-",z=3D"-",v=3D"-";=0A=
+ var dc=3D_ubd.cookie;=0A=
+ var iq =3D l.indexOf("?");=0A=
+ var ih =3D l.indexOf("#");=0A=
+ var url=3Dl;=0A=
+ if (dc) {=0A=
+  a=3D_uES(_uGC(dc,"__utma=3D"+_udh+".",";"));=0A=
+  b=3D_uES(_uGC(dc,"__utmb=3D"+_udh,";"));=0A=
+  c=3D_uES(_uGC(dc,"__utmc=3D"+_udh,";"));=0A=
+  x=3D_uES(_uGC(dc,"__utmx=3D"+_udh,";"));=0A=
+  z=3D_uES(_uGC(dc,"__utmz=3D"+_udh+".",";"));=0A=
+  v=3D_uES(_uGC(dc,"__utmv=3D"+_udh+".",";"));=0A=
+  k=3D(_uHash(a+b+c+x+z+v)*1)+(_udh*1);=0A=
+  =
+p=3D"__utma=3D"+a+"&__utmb=3D"+b+"&__utmc=3D"+c+"&__utmx=3D"+x+"&__utmz=3D=
+"+z+"&__utmv=3D"+v+"&__utmk=3D"+k;=0A=
+ }=0A=
+ if (p) {=0A=
+  if (h && ih>-1) return;=0A=
+  if (h) { url=3Dl+"#"+p; }=0A=
+  else {=0A=
+   if (iq=3D=3D-1 && ih=3D=3D-1) url=3Dl+"?"+p;=0A=
+   else if (ih=3D=3D-1) url=3Dl+"&"+p;=0A=
+   else if (iq=3D=3D-1) url=3Dl.substring(0,ih-1)+"?"+p+l.substring(ih);=0A=
+   else url=3Dl.substring(0,ih-1)+"&"+p+l.substring(ih);=0A=
+  }=0A=
+ }=0A=
+ return url;=0A=
+}=0A=
+function __utmLinker(l,h) {=0A=
+ if (!_ulink || !l || l=3D=3D"") return;=0A=
+ _udl.href=3D__utmLinkerUrl(l,h);=0A=
+}=0A=
+function __utmLinkPost(f,h) {=0A=
+ if (!_ulink || !f || !f.action) return;=0A=
+ f.action=3D__utmLinkerUrl(f.action, h);=0A=
+ return;=0A=
+}=0A=
+function __utmSetVar(v) {=0A=
+ if (!v || v=3D=3D"") return;=0A=
+ if (!_udo || _udo =3D=3D "") {=0A=
+  _udh=3D_uDomain();=0A=
+  if (_udn && _udn!=3D"") { _udo=3D" domain=3D"+_udn+";"; }=0A=
+ }=0A=
+ if (!_uVG()) return;=0A=
+ var r=3DMath.round(Math.random() * 2147483647);=0A=
+ _ubd.cookie=3D"__utmv=3D"+_udh+"."+_uES(v)+"; path=3D"+_utcp+"; =
+expires=3D"+_uNx()+";"+_udo;=0A=
+ var s=3D"&utmt=3Dvar&utmn=3D"+r;=0A=
+ if (_usample && _usample !=3D 100) s+=3D"&utmsp=3D"+_uES(_usample);=0A=
+ if ((_userv=3D=3D0 || _userv=3D=3D2) && _uSP()) {=0A=
+  var i=3Dnew Image(1,1);=0A=
+  i.src=3D_ugifpath+"?"+"utmwv=3D"+_uwv+s;=0A=
+  i.onload=3Dfunction() { _uVoid(); }=0A=
+ }=0A=
+ if ((_userv=3D=3D1 || _userv=3D=3D2) && _uSP()) {=0A=
+  var i2=3Dnew Image(1,1);=0A=
+  =
+i2.src=3D_ugifpath2+"?"+"utmwv=3D"+_uwv+s+"&utmac=3D"+_uacct+"&utmcc=3D"+=
+_uGCS();=0A=
+  i2.onload=3Dfunction() { _uVoid(); }=0A=
+ }=0A=
+}=0A=
+function _uGCS() {=0A=
+ var t,c=3D"",dc=3D_ubd.cookie;=0A=
+ if ((t=3D_uGC(dc,"__utma=3D"+_udh+".",";"))!=3D"-") =
+c+=3D_uES("__utma=3D"+t+";+");=0A=
+ if ((t=3D_uGC(dc,"__utmx=3D"+_udh,";"))!=3D"-") =
+c+=3D_uES("__utmx=3D"+t+";+");=0A=
+ if ((t=3D_uGC(dc,"__utmz=3D"+_udh+".",";"))!=3D"-") =
+c+=3D_uES("__utmz=3D"+t+";+");=0A=
+ if ((t=3D_uGC(dc,"__utmv=3D"+_udh+".",";"))!=3D"-") =
+c+=3D_uES("__utmv=3D"+t+";");=0A=
+ if (c.charAt(c.length-1)=3D=3D"+") c=3Dc.substring(0,c.length-1);=0A=
+ return c;=0A=
+}=0A=
+function _uGC(l,n,s) {=0A=
+ if (!l || l=3D=3D"" || !n || n=3D=3D"" || !s || s=3D=3D"") return "-";=0A=
+ var i,i2,i3,c=3D"-";=0A=
+ i=3Dl.indexOf(n);=0A=
+ i3=3Dn.indexOf("=3D")+1;=0A=
+ if (i > -1) {=0A=
+  i2=3Dl.indexOf(s,i); if (i2 < 0) { i2=3Dl.length; }=0A=
+  c=3Dl.substring((i+i3),i2);=0A=
+ }=0A=
+ return c;=0A=
+}=0A=
+function _uDomain() {=0A=
+ if (!_udn || _udn=3D=3D"" || _udn=3D=3D"none") { _udn=3D""; return 1; }=0A=
+ if (_udn=3D=3D"auto") {=0A=
+  var d=3D_ubd.domain;=0A=
+  if (d.substring(0,4)=3D=3D"www.") {=0A=
+   d=3Dd.substring(4,d.length);=0A=
+  }=0A=
+  _udn=3Dd;=0A=
+ }=0A=
+ _udn =3D _udn.toLowerCase(); =0A=
+ if (_uhash=3D=3D"off") return 1;=0A=
+ return _uHash(_udn);=0A=
+}=0A=
+function _uHash(d) {=0A=
+ if (!d || d=3D=3D"") return 1;=0A=
+ var h=3D0,g=3D0;=0A=
+ for (var i=3Dd.length-1;i>=3D0;i--) {=0A=
+  var c=3DparseInt(d.charCodeAt(i));=0A=
+  h=3D((h << 6) & 0xfffffff) + c + (c << 14);=0A=
+  if ((g=3Dh & 0xfe00000)!=3D0) h=3D(h ^ (g >> 21));=0A=
+ }=0A=
+ return h;=0A=
+}=0A=
+function _uFixA(c,s,t) {=0A=
+ if (!c || c=3D=3D"" || !s || s=3D=3D"" || !t || t=3D=3D"") return "-";=0A=
+ var a=3D_uGC(c,"__utma=3D"+_udh+".",s);=0A=
+ var lt=3D0,i=3D0;=0A=
+ if ((i=3Da.lastIndexOf(".")) > 9) {=0A=
+  _uns=3Da.substring(i+1,a.length);=0A=
+  _uns=3D(_uns*1)+1;=0A=
+  a=3Da.substring(0,i);=0A=
+  if ((i=3Da.lastIndexOf(".")) > 7) {=0A=
+   lt=3Da.substring(i+1,a.length);=0A=
+   a=3Da.substring(0,i);=0A=
+  }=0A=
+  if ((i=3Da.lastIndexOf(".")) > 5) {=0A=
+   a=3Da.substring(0,i);=0A=
+  }=0A=
+  a+=3D"."+lt+"."+t+"."+_uns;=0A=
+ }=0A=
+ return a;=0A=
+}=0A=
+function _uTrim(s) {=0A=
+  if (!s || s=3D=3D"") return "";=0A=
+  while ((s.charAt(0)=3D=3D' ') || (s.charAt(0)=3D=3D'\n') || =
+(s.charAt(0,1)=3D=3D'\r')) s=3Ds.substring(1,s.length);=0A=
+  while ((s.charAt(s.length-1)=3D=3D' ') || =
+(s.charAt(s.length-1)=3D=3D'\n') || (s.charAt(s.length-1)=3D=3D'\r')) =
+s=3Ds.substring(0,s.length-1);=0A=
+  return s;=0A=
+}=0A=
+function _uEC(s) {=0A=
+  var n=3D"";=0A=
+  if (!s || s=3D=3D"") return "";=0A=
+  for (var i=3D0;i<s.length;i++) {if (s.charAt(i)=3D=3D" ") n+=3D"+"; =
+else n+=3Ds.charAt(i);}=0A=
+  return n;=0A=
+}=0A=
+function __utmVisitorCode(f) {=0A=
+ var r=3D0,t=3D0,i=3D0,i2=3D0,m=3D31;=0A=
+ var a=3D_uGC(_ubd.cookie,"__utma=3D"+_udh+".",";");=0A=
+ if ((i=3Da.indexOf(".",0))<0) return;=0A=
+ if ((i2=3Da.indexOf(".",i+1))>0) r=3Da.substring(i+1,i2); else return =
+"";  =0A=
+ if ((i=3Da.indexOf(".",i2+1))>0) t=3Da.substring(i2+1,i); else return =
+"";  =0A=
+ if (f) {=0A=
+  return r;=0A=
+ } else {=0A=
+  var c=3Dnew =
+Array('A','B','C','D','E','F','G','H','J','K','L','M','N','P','R','S','T'=
+,'U','V','W','X','Y','Z','1','2','3','4','5','6','7','8','9');=0A=
+  return =
+c[r>>28&m]+c[r>>23&m]+c[r>>18&m]+c[r>>13&m]+"-"+c[r>>8&m]+c[r>>3&m]+c[((r=
+&7)<<2)+(t>>30&3)]+c[t>>25&m]+c[t>>20&m]+"-"+c[t>>15&m]+c[t>>10&m]+c[t>>5=
+&m]+c[t&m];=0A=
+ }=0A=
+}=0A=
+function _uIN(n) {=0A=
+ if (!n) return false;=0A=
+ for (var i=3D0;i<n.length;i++) {=0A=
+  var c=3Dn.charAt(i);=0A=
+  if ((c<"0" || c>"9") && (c!=3D".")) return false;=0A=
+ }=0A=
+ return true;=0A=
+}=0A=
+function _uES(s,u) {=0A=
+ if (typeof(encodeURIComponent) =3D=3D 'function') {=0A=
+  if (u) return encodeURI(s);=0A=
+  else return encodeURIComponent(s);=0A=
+ } else {=0A=
+  return escape(s);=0A=
+ }=0A=
+}=0A=
+function _uUES(s) {=0A=
+ if (typeof(decodeURIComponent) =3D=3D 'function') {=0A=
+  return decodeURIComponent(s);=0A=
+ } else {=0A=
+  return unescape(s);=0A=
+ }=0A=
+}=0A=
+function _uVG() {=0A=
+ if((_udn.indexOf("www.google.") =3D=3D 0 || _udn.indexOf(".google.") =
+=3D=3D 0 || _udn.indexOf("google.") =3D=3D 0) && _utcp=3D=3D'/' && =
+_udn.indexOf("google.org")=3D=3D-1) {=0A=
+  return false;=0A=
+ }=0A=
+ return true;=0A=
+}=0A=
+function _uSP() {=0A=
+ var s=3D100;=0A=
+ if (_usample) s=3D_usample;=0A=
+ if(s>=3D100 || s<=3D0) return true;=0A=
+ return ((__utmVisitorCode(1)%10000)<(s*100));=0A=
+}=0A=
+function urchinPathCopy(p){=0A=
+ var d=3Ddocument,nx,tx,sx,i,c,cs,t,h,o;=0A=
+ cs=3Dnew Array("a","b","c","v","x","z");=0A=
+ h=3D_uDomain(); if (_udn && _udn!=3D"") o=3D" domain=3D"+_udn+";";=0A=
+ nx=3D_uNx()+";";=0A=
+ tx=3Dnew Date(); tx.setTime(tx.getTime()+(_utimeout*1000));=0A=
+ tx=3Dtx.toGMTString()+";";=0A=
+ sx=3Dnew Date(); sx.setTime(sx.getTime()+(_ucto*1000));=0A=
+ sx=3Dsx.toGMTString()+";";=0A=
+ for (i=3D0;i<6;i++){=0A=
+  t=3D" expires=3D";=0A=
+  if (i=3D=3D1) t+=3Dtx; else if (i=3D=3D2) t=3D""; else if (i=3D=3D5) =
+t+=3Dsx; else t+=3Dnx;=0A=
+  c=3D_uGC(d.cookie,"__utm"+cs[i]+"=3D"+h,";");=0A=
+  if (c!=3D"-") d.cookie=3D"__utm"+cs[i]+"=3D"+c+"; path=3D"+p+";"+t+o;=0A=
+ }=0A=
+}=0A=
+function _uCO() {=0A=
+ if (!_utk || _utk=3D=3D"" || _utk.length<10) return;=0A=
+ var d=3D'www.google.com';=0A=
+ if (_utk.charAt(0)=3D=3D'!') d=3D'analytics.corp.google.com';=0A=
+ _ubd.cookie=3D"GASO=3D"+_utk+"; path=3D"+_utcp+";"+_udo;=0A=
+ var sc=3Ddocument.createElement('script');=0A=
+ sc.type=3D'text/javascript';=0A=
+ sc.id=3D"_gasojs";=0A=
+ =
+sc.src=3D'https://'+d+'/analytics/reporting/overlay_js?gaso=3D'+_utk+'&'+=
+Math.random();=0A=
+ document.getElementsByTagName('head')[0].appendChild(sc);  =0A=
+}=0A=
+function _uGT() {=0A=
+ var h=3Dlocation.hash, a;=0A=
+ if (h && h!=3D"" && h.indexOf("#gaso=3D")=3D=3D0) {=0A=
+  a=3D_uGC(h,"gaso=3D","&");=0A=
+ } else {=0A=
+  a=3D_uGC(_ubd.cookie,"GASO=3D",";");=0A=
+ }=0A=
+ return a;=0A=
+}=0A=
+var _utk=3D_uGT();=0A=
+if (_utk && _utk!=3D"" && _utk.length>10 && _utk.indexOf("=3D")=3D=3D-1) =
+{=0A=
+ if (window.addEventListener) {=0A=
+  window.addEventListener('load', _uCO, false); =0A=
+ } else if (window.attachEvent) { =0A=
+  window.attachEvent('onload', _uCO);=0A=
+ }=0A=
+}=0A=
+=0A=
+function _uNx() {=0A=
+  return (new Date((new Date()).getTime()+63072000000)).toGMTString();=0A=
+}=0A=
+
+------=_NextPart_000_0000_01C9C2AA.66E6A430--
