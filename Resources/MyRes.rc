@@ -4,7 +4,7 @@
 // first  Icon for the program itself
 // second Icon for a registered filetype 
 //0                       ICON                    "Icons\\Common.ico"
-0                       ICON                    "Icons\\ProgIcon.ico"
+0                       ICON                    "Icons\\AppIcon.ico"
 
 /////////////////////////////////////////////////////////////////////////////
 //
