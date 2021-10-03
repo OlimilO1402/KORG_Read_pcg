@@ -14,6 +14,7 @@ Attribute VB_Exposed = False
 Option Explicit
 Private m_FileName As String
 Private m_Wave As TWaveSound
+'Private m_Buffer() As Byte
 
 Private Sub Class_Initialize()
     With m_Wave
@@ -24,7 +25,7 @@ Private Sub Class_Initialize()
         End With
     End With
 End Sub
-Friend Sub NewC(wavformat As WaveFormat)
+Friend Sub New_(wavformat As WaveFormat)
     m_Wave.WAVEfmt = New_WaveFormatChunk(wavformat)
 End Sub
 
@@ -74,8 +75,13 @@ Public Sub CopyDataFromKSF(ByVal pDat As Long, ByVal bLength As Long)
     End With
 End Sub
 Public Sub Play()
-    If Len(m_FileName) > 0 Then Call MAudioSystem.PlayWAVfile(m_FileName)
+    'If Len(m_FileName) > 0 Then Call MAudioSystem.PlayWAVfile(m_FileName)
+    MAudioSystem.PlayWAV Me
 End Sub
+Public Property Get Ptr() As Long
+    Ptr = VarPtr(m_Wave) '.data.data(0))
+End Property
+
 Public Property Get pData() As Long
     pData = VarPtr(m_Wave.data.data(0))
 End Property
@@ -123,6 +129,9 @@ Catch:
     MsgBox Err.Description
     GoTo Finally
 End Sub
+Public Property Get FileName() As String
+    FileName = m_FileName
+End Property
 'Public Sub Load(aFileName As String)
 '
 'End Sub

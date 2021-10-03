@@ -65,7 +65,7 @@ Try: On Error GoTo Catch
         Call MKMPFile.LoadKMPFile(m_KMPFiles(0), m_FileName)
         Call MKMPFile.LoadAllKSFFiles(m_KMPFiles(), Me)
     ElseIf ext = "KSF" Then
-        Call Me.AddKorgSampleFile(New_KorgSampleFile(Me, m_FileName))
+        Call Me.AddKorgSampleFile(MNew.KorgSampleFile(Me, m_FileName))
     End If
     
     

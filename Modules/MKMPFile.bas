@@ -152,11 +152,11 @@ Try: On Error GoTo Catch
                         If UCase(FNam) <> "SKIPPEDSAMPL" Then
                             PFN = Path & FNam
                             If FileExists(PFN) Then
-                               Call aKorgDoc.AddKorgSampleFile(New_KorgSampleFile(aKorgDoc, PFN, i, j))
+                               aKorgDoc.AddKorgSampleFile MNew.KorgSampleFile(aKorgDoc, PFN, i, j)
                                 'Call KSF.Load(PFN)
                                 'col.Add KSF, UCase(FNam)
                             Else
-                                MsgBox "The file was not found: " & PFN
+                                MsgBox "File not found: " & PFN
                             End If
                         End If
                     End With

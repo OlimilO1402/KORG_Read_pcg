@@ -406,7 +406,7 @@ Public Declare Sub GetMem4 Lib "msvbvm60" (ByRef pSrc As Any, ByRef pDst As Any)
 Public Declare Sub GetMem2 Lib "msvbvm60" (ByRef pSrc As Any, ByRef pDst As Any)
 
 Public Sub Load(this As PCGFile, aFilename)
-TryE: On Error GoTo Catch
+Try: On Error GoTo Catch
     Dim FNr As Integer: FNr = FreeFile
     Open aFilename For Binary Access Read As FNr
     With this
@@ -465,12 +465,11 @@ TryE: On Error GoTo Catch
             Loop
         End If
     End With
-Finally:
-    Close FNr
-    Exit Sub
+    GoTo Finally
 Catch:
     MsgBox Err.Description
-    GoTo Finally
+Finally:
+    Close FNr
 End Sub
 ' #################### '       Read       ' #################### '
 Public Sub ReadPCGFileHeader(this As PCGFileHeader, ByVal FNr As Integer)

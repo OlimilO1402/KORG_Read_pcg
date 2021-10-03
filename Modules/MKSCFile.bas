@@ -67,7 +67,7 @@ Public Sub LoadAllKSFFiles(this As KSCFile, aKorgDoc As KorgDocument)
             'Halt der Pfad fehlt!
             FNam = CStr(vFNam)
             PFN = Path & FNam
-            Call aKorgDoc.AddKorgSampleFile(New_KorgSampleFile(aKorgDoc, PFN))
+            aKorgDoc.AddKorgSampleFile MNew.KorgSampleFile(aKorgDoc, PFN)
         Next
     End With
 End Sub

@@ -60,6 +60,12 @@ Begin VB.Form Form1
          Caption         =   "Show Samples"
       End
    End
+   Begin VB.Menu mnuHelp 
+      Caption         =   " ? "
+      Begin VB.Menu mnuHelpInfo 
+         Caption         =   "Info"
+      End
+   End
 End
 Attribute VB_Name = "Form1"
 Attribute VB_GlobalNameSpace = False
@@ -97,18 +103,25 @@ Private Sub mnuFileOpen_Click()
         If Not m_KORGDoc Is Nothing Then p = m_KORGDoc.FileName
         If Len(p) = 0 Then p = App.Path
         .InitialDirectory = p
-        If .ShowDialog(Me) = DialogResult_OK Then
+        If .ShowDialog(Me) = vbOK Then
             TxtFileName.Text = .FileName
             Call OpenKorgFile(TxtFileName.Text)
         End If
     End With
 End Sub
 Private Sub mnuFileExit_Click()
-    Dim frm As Form
-    For Each frm In VB.Forms
-        Unload frm
+    Dim Frm As Form
+    For Each Frm In VB.Forms
+        Unload Frm
     Next
 End Sub
+
+Private Sub mnuHelpInfo_Click()
+    MsgBox App.CompanyName & " " & App.EXEName & vbCrLf & _
+           App.FileDescription & vbCrLf & _
+           "v" & App.Major & "." & App.Minor & "." & App.Revision, vbInformation
+End Sub
+
 Private Sub mnuViewShowSamples_Click()
     If Not m_KORGDoc Is Nothing Then
         Call Form2.ShowModal(m_KORGDoc, Me)

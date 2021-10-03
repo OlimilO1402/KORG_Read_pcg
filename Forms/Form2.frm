@@ -112,7 +112,7 @@ Private m_CurKSFFile As KorgSampleFile
 Private m_WaveView   As WaveView
 
 Public Sub ShowModal(KDoc As KorgDocument, aForm As Form)
-    Set m_WaveView = New_WaveView(Me.PBWaveView)
+    Set m_WaveView = MNew.WaveView(Me.PBWaveView)
     Set m_KDoc = KDoc
     Call m_KDoc.KSFFilesToListBox(Me.LstKSFFiles)
     If LstKSFFiles.ListCount > 0 Then
@@ -138,7 +138,7 @@ End Sub
 
 Private Sub BtnPlay_Click()
     If Not m_CurKSFFile Is Nothing Then
-        Call m_CurKSFFile.Play
+        m_CurKSFFile.Play
         LstKSFFiles.SetFocus
     End If
 End Sub
@@ -172,7 +172,7 @@ Private Sub mnuFileSaveAllWav_Click()
     Dim FNam As String
     For Each KSF In m_KDoc.Samples
         With KSF
-            FNam = .FileName & "_" & .SampleName & ".wav"
+            FNam = .FileName & "_" & Trim(.SampleName) & ".wav"
             Set wav = KSF.Wave
             If Not wav Is Nothing Then
                 Call wav.Save(FNam)

@@ -1,21 +1,18 @@
-Attribute VB_Name = "MConstructors"
+Attribute VB_Name = "MNew"
 Option Explicit
 
-Public Function New_KorgSampleFile(aKorgDoc As KorgDocument, _
-                                   Optional aFilename As String, _
-                                   Optional ByVal kmpIndex As Long, _
-                                   Optional ByVal rlpIndex As Long) As KorgSampleFile
-    Set New_KorgSampleFile = New KorgSampleFile
-    Call New_KorgSampleFile.NewC(aKorgDoc, aFilename, kmpIndex, rlpIndex)
+Public Function KorgSampleFile(aKorgDoc As KorgDocument, _
+                               Optional aFilename As String, _
+                               Optional ByVal kmpIndex As Long, _
+                               Optional ByVal rlpIndex As Long) As KorgSampleFile
+    Set KorgSampleFile = New KorgSampleFile: KorgSampleFile.New_ aKorgDoc, aFilename, kmpIndex, rlpIndex
 End Function
 
-Public Function New_WaveSound(wavformat As WaveFormat) As WaveSound
-    Set New_WaveSound = New WaveSound
-    Call New_WaveSound.NewC(wavformat)
+Public Function WaveSound(wavformat As WaveFormat) As WaveSound
+    Set WaveSound = New WaveSound: WaveSound.New_ wavformat
 End Function
 
-Public Function New_WaveView(aPBView As PictureBox) As WaveView
-    Set New_WaveView = New WaveView
-    Call New_WaveView.NewC(aPBView)
+Public Function WaveView(aPBView As PictureBox) As WaveView
+    Set WaveView = New WaveView: WaveView.New_ aPBView
 End Function
 

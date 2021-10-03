@@ -471,7 +471,7 @@ Dim myOwnerhwnd As Long
 Dim myOwnerhInst As Long
 Dim FN As String
 
-TryE: On Error GoTo CatchE
+Try: On Error GoTo Catch
   
   If Not IsMissing(frm) Then
     'myOwnerHwnd = GetDesktopWindow 'CreateWindowEx(0, "window", "anewwindow", 0, 250, 250, 1, 1, 0, 0, App.hInstance, 0) ''Frm.hwnd
@@ -522,7 +522,7 @@ TryE: On Error GoTo CatchE
     'oder zuviele Dateien
   End If
   Exit Function
-CatchE:
+Catch:
   If Err.Number = 32755 Then
     ShowDialog = DialogResult.DialogResult_Cancel
   Else

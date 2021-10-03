@@ -37,7 +37,7 @@ Private Sub Class_Initialize()
     m_Brdr = 8
 End Sub
 
-Public Sub NewC(aPBView As PictureBox)
+Friend Sub New_(aPBView As PictureBox)
     Set mPBView = aPBView
     mPBView.AutoRedraw = True
 End Sub

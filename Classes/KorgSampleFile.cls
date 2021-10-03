@@ -18,7 +18,7 @@ Private m_Wave    As WaveSound
 Private m_KMPIndex As Long 'in welcher KMP-datei
 Private m_RLPIndex As Long 'an welcher Stelle in der KMP-Datei
 
-Public Sub NewC(aKorgDoc As KorgDocument, _
+Friend Sub New_(aKorgDoc As KorgDocument, _
                 Optional aFilename As String, _
                 Optional ByVal kmpIndex As Long, _
                 Optional ByVal rlpIndex As Long)
@@ -140,7 +140,7 @@ Public Property Get Wave() As WaveSound
     If m_Wave Is Nothing Then
         With m_KSFFile.SampleData
             If SafeUbound(ArrPtr(.SampleData)) >= 0 Then
-                Set m_Wave = New_WaveSound(Me.WaveFormat)
+                Set m_Wave = MNew.WaveSound(Me.WaveFormat)
                 Call m_Wave.CopyDataFromKSF(VarPtr(.SampleData(0)), UBound(.SampleData) + 1)
                 m_Wave.SamplerInfo = Me.SamplerInfo
                 m_Wave.LoopList = Me.LoopList
