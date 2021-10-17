@@ -165,6 +165,8 @@ Public Sub Play()
     'Call MAudioSystem.PlayWAV(Me.Wave)
     Dim wav As WaveSound: Set wav = Me.Wave
     If Not wav Is Nothing Then
+        'If Len(wav.FileName) = 0 Then
+       
         wav.Play
     End If
 End Sub

@@ -76,13 +76,14 @@ Public Sub CopyDataFromKSF(ByVal pDat As Long, ByVal bLength As Long)
 End Sub
 Public Sub Play()
     'If Len(m_FileName) > 0 Then Call MAudioSystem.PlayWAVfile(m_FileName)
-    MAudioSystem.PlayWAV Me
+    'MAudioSystem.Play Me.pData
+    MAudioSystem.Play Me.FileName
 End Sub
-Public Property Get Ptr() As Long
-    Ptr = VarPtr(m_Wave) '.data.data(0))
+Public Property Get ptr() As LongPtr
+    ptr = VarPtr(m_Wave) '.data.data(0))
 End Property
 
-Public Property Get pData() As Long
+Public Property Get pData() As LongPtr
     pData = VarPtr(m_Wave.data.data(0))
 End Property
 Public Property Get WaveDataByteLength() As Long

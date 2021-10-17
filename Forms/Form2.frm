@@ -21,7 +21,7 @@ Begin VB.Form Form2
          Strikethrough   =   0   'False
       EndProperty
       Height          =   6255
-      Left            =   2640
+      Left            =   2520
       MultiLine       =   -1  'True
       ScrollBars      =   3  'Beides
       TabIndex        =   5
@@ -34,7 +34,7 @@ Begin VB.Form Form2
       BackColor       =   &H00000040&
       ForeColor       =   &H00FF0000&
       Height          =   4215
-      Left            =   2640
+      Left            =   2520
       ScaleHeight     =   4155
       ScaleWidth      =   8595
       TabIndex        =   4
@@ -44,7 +44,7 @@ Begin VB.Form Form2
    Begin VB.CommandButton BtnPlay 
       Caption         =   "Play"
       Height          =   375
-      Left            =   120
+      Left            =   0
       TabIndex        =   3
       Top             =   120
       Width           =   2415
@@ -52,7 +52,7 @@ Begin VB.Form Form2
    Begin VB.OptionButton OptView 
       Caption         =   "Wave"
       Height          =   375
-      Left            =   3840
+      Left            =   3720
       Style           =   1  'Grafisch
       TabIndex        =   2
       Top             =   120
@@ -61,7 +61,7 @@ Begin VB.Form Form2
    Begin VB.OptionButton OptInfo 
       Caption         =   "Info"
       Height          =   375
-      Left            =   2640
+      Left            =   2520
       Style           =   1  'Grafisch
       TabIndex        =   1
       Top             =   120
@@ -70,7 +70,7 @@ Begin VB.Form Form2
    End
    Begin VB.ListBox LstKSFFiles 
       Height          =   6300
-      Left            =   120
+      Left            =   0
       TabIndex        =   0
       Top             =   480
       Width           =   2415
@@ -172,6 +172,7 @@ Private Sub mnuFileSaveAllWav_Click()
     Dim FNam As String
     For Each KSF In m_KDoc.Samples
         With KSF
+        'Ja shit es geht nur um die Zuweisung des Dateinamens über KSF
             FNam = .FileName & "_" & Trim(.SampleName) & ".wav"
             Set wav = KSF.Wave
             If Not wav Is Nothing Then

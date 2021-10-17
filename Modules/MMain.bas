@@ -3,7 +3,7 @@ Option Explicit
 Private Declare Sub InitCommonControls Lib "comctl32.dll" ()
 
 Public Sub Main()
-    MAudioSystem.InitAudioSystem
+    'MAudioSystem.InitAudioSystem
     MMidi.InitMidi
     Call InitCommonControls
     Form1.Show

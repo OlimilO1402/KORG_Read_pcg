@@ -1,6 +1,11 @@
-# KORG_Read_pcg
+# KORG_Read_pcg  
 ## Reading the .pcg-fileformat for KORG synths    
-
+  
+[![GitHub](https://img.shields.io/github/license/OlimilO1402/KORG_Read_pcg?style=plastic)](https://github.com/OlimilO1402/KORG_Read_pcg/blob/master/LICENSE) 
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/OlimilO1402/KORG_Read_pcg?style=plastic)](https://github.com/OlimilO1402/KORG_Read_pcg/releases/latest)
+[![Github All Releases](https://img.shields.io/github/downloads/OlimilO1402/KORG_Read_pcg/total.svg)](https://github.com/OlimilO1402/KORG_Read_pcg/releases/download/v1.2.17/Korg_TrReader_v1.2.17.zip)
+[![Follow](https://img.shields.io/github/followers/OlimilO1402.svg?style=social&label=Follow&maxAge=2592000)](https://github.com/OlimilO1402/KORG_Read_pcg/watchers)
+  
 Reads files in .pcg-format; many Synths from KORGs e.g. the Triton line of 
 synths can store and load these files, for sharing sound data between 
 different synths like Triton, Triton LE, Karma, Triton Extreme, X50 etc. 
@@ -9,7 +14,7 @@ to the lack of sample ram memory and sampling feature.
 .pcg-files can be found e.g. in the download-section of korgforums.com
  http://www.korgforums.com/downloads.htm
 
-I started this project in mid 2009 after i bought my very portable X50-Synth.
+I started this project around July 2009 after i bought my very portable X50-Synth.
 It is just a tiny sample project. Maybe it can not read every pcg-file, but 
 it could serve as a starting point for your own implementations, or maybe 
 just in case you want to see whats inside this or that pcg-file.
